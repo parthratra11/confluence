@@ -11,7 +11,7 @@ export default function Jumbotron() {
       <ParallaxLayer
         style={{
           background:
-            "linear-gradient(rgba(70, 53, 157, 0.7), rgba(157, 92, 160, 0.6)),  url('assets/images/jumbotron.png') no-repeat center/cover"
+            "linear-gradient(rgba(95, 4, 28, 0.95), rgba(157, 92, 160, 0.6)),  url('assets/images/jumbotron.png') no-repeat center/cover"
         }}
         factor={2}
       >

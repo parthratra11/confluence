@@ -9,9 +9,9 @@ import { FAQ as faq } from "@/content/constants";
 
 export default function FAQ() {
   return (
-    <Section offset={3} containerClassName="bg-secondary-200" mdAlign="left">
+    <Section offset={3} containerClassName="bg-red-900" mdAlign="left">
       <div className="h-full md:m-auto md:max-w-[800px]">
-        <Heading align="center" className="text-tertiary-700">
+        <Heading align="center" className="text-secondary-200">
           FAQ
         </Heading>
         <div className="h-full overflow-y-auto p-4 py-8">

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply cursor-pointer no-underline;
+  }
+}
+
+@layer components {
+  /* Define typographic styles */
+  .heading {
+    @apply font-sans text-6xl font-bold tracking-tight;
+  }
+
+  .display {
+    @apply font-display text-6xl font-normal;
+  }
+
+  .confluence {
+    @apply font-confluence text-7xl font-bold;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Animation for the Sponsors section */
+  .sponsors-animation {
+    animation: sponsors 10s linear infinite;
+  }
+}
+
+@keyframes sponsors {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Universal styles */
+* {
+  user-select: none;
+}

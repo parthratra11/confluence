@@ -38,61 +38,58 @@ export const ARTISTS = [
   [
     // Day 1
     {
-      prefix: "One and only",
-      name: "DG IMMORTALS",
-      description: "Contemporary Hip Hop artist DG IMMORTALS is from Delhi, India. DG IMMORTALS has been creating waves in the Indian music world with its distinctive and modern sound.",
-      image: "dgmortal.png"
+      prefix: "One and Only",
+      name: "Shah Rukh Khan",
+      description: "The King Khan. The majestic star, yada yada.",
+      image: "artist1.png"
     },
     {
-      prefix: "Keep Looking!",
-      name: "COMING SOON",
-      description: "Till then keep guessing and stay tuned.",
-      image: "placeholder.png"
+      prefix: "Introducing",
+      name: "Artist 2 (Day 1)",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "artist2.png"
     }
   ],
   [
     // Day 2
     {
-      prefix: "Keep Looking!",
-      name: "COMING SOON",
-      description: "Till then keep guessing and stay tuned.",
-      image: "placeholder.png"
+      prefix: "Introducing",
+      name: "Artist 2",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "artist2.png"
     },
     {
-      prefix: "Keep Looking!",
-      name: "COMING SOON",
-      description: "Till then keep guessing and stay tuned.",
-      image: "placeholder.png"
+      prefix: "Introducing",
+      name: "Artist 1 (Day 2)",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "artist1.png"
     }
-   
   ],
   [
     // Day 3
-     {
-      prefix: "Keep Looking!",
-      name: "COMING SOON",
-      description: "Till then keep guessing and stay tuned.",
-      image: "placeholder.png"
+    {
+      prefix: "Introducing",
+      name: "Artist 3",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "artist3.png"
     },
     {
-      prefix: "Keep Looking!",
-      name: "COMING SOON",
-      description: "Till then keep guessing and stay tuned.",
-      image: "placeholder.png"
+      prefix: "Introducing",
+      name: "Artist 2 (Day 1)",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "artist2.png"
     }
   ]
 ];
 
 /* FAQ section constants */
 export const FAQ = [
- {
-    question: " What is Confluence’24?",
+  {
+    question: "What is Confluence?",
     answer:
-      "Confluence is annual cultural fest held by prestigious Hansraj college of University of Delhi. Confluence is the ultimate culmination of talent, creativity, and innovation drawing participants and attendees from all the corners of country. It is blend of art, performance, competition and events."
+      "Confluence is the annual cultural fest of Hansraj College, University of Delhi."
   },
   {
-    question: "When and where will the Confluence be organised ?",
-
     question: "Rules and Regulations",
     answer: [
       "Entry will be on first-come basis. Gates will be closed as deemed necessary.",
@@ -122,7 +119,7 @@ export const FAQ = [
   {
     question: "Where will Confluence take place?",
     answer:
-      "The Confluence will be held on dates of 6th,7th and 8th April and the venue is  campus of Hansraj College, University of Delhi."
+      "Confluence will be held inside the premises of Hansraj College, University of Delhi."
   },
   {
     question: "Will non-DU students be allowed entry?",
@@ -130,145 +127,53 @@ export const FAQ = [
       "Yes. Confluence is open to all students, regardless of their college or university."
   },
   {
-    question: "What if I am not able register through website?",
+    question: "How can I register for Confluence?",
     answer:
-      "You can also register through the respective society as well through which you are participating."
+      "Just click on the any of the Register buttons on this website, and you'll be good to go!"
   },
   {
     question:
       "What other societal events are being held, apart from the main fest?",
     answer:
       "Just check out the section below to find out the details and registration links for all the events being organized by different societies of Hansraj College, under the umbrella of Confluence."
-  },
-  {
-    question:
-      "Whom should I contact if there is further question regarding the event?",
-    answer:
-      `Contact on the no. given below:\n
-  Shivam Kumar-758001927 [President]\n
-  Rajeev Rathore-8962345146 [Coordinator]\n
-  Kuber Kumar Sahoo -9810778091\n
-  Email id – Studentunion@hrc.du.ac.in`
   }
 ];
 
 /* Events section constants */
 export const EVENTS = [
   // Order here determines the order on the website
- {
-    name: "GROOVE VOL 3.",
+  {
+    name: "Event 1",
     day: "Day 1",
-    description: "Western Group Dance Competition",
-    image: "oorja 2.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
-  },
-   {
-    name: "CHOREO'24",
-    day: "Day 1",
-    description: "The Annual Theme Dance Competition ",
-    image: "choreo24.jpg",
-    organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "event1.png",
+    organizedBy: "Dramatics Society",
+    registrationLink: "#"
   },
   {
-    name: "RACHNOTSAV,24",
-    day: "Day 1",
-    description: "Western Acapella Competition | Western Solo singing Competition",
-    image: "westernswaranjali.png",
-    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
-    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
-  },
-  {
-    name: "BOLBALA",
-    day: "Day 1",
-    description: "Let's joyfully honor the boundless range of Nukkad Natak, filling every space with vivid colors.",
-    image: "bolbala.jpeg",
-    organizedBy: "Dramatics Society, Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
-  },
-  {
-    name: "BLEEDAT VOL 3.",
+    name: "Event 2",
     day: "Day 2",
-    description: "Crew VS Crew Dance Competition",
-    image: "OORJA 1.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "event2.png",
+    organizedBy: "Dramatics Society",
+    registrationLink: "#"
   },
   {
-    name: "BLEEDAT VOL 3.",
-    day: "Day 2",
-    description: "1 VS 1 Dance Competition",
-    image: "OORJA 3.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
-  },
-  {
-    name: "NRITYA RATI",
-    day: "Day 2",
-    description: "Solo Folk Dance Competition",
-    image: "soloabhivyakti.png",
-    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScG7pIvUqFGMFr5GwbMJeiLpRzqJj17FWLXt0RtLLLO3fgpsA/viewform"
-  },
-  {
-    name: "TAAL TARANG'24",
-    day: "Day 2",
-    description: "NRITYA SPARSH- Solo Indian Classical Dance Competitions | NRITYA MILAAP- Duet Indian Classical Dance Competitions",
-    image: "Duetkavya.png",
-    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
-  },
-  {
-    name: "TAAL TARANG'24",
-    day: "Day 2",
-    description: "NRITYA MANTHAN- Group Indian Classical Dance Competitions",
-    image: "groupkavya.png",
-    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
-  },
-   {
-    name: "RACHNOTSAV,24",
-    day: "Day 2",
-    description: "Indian Classical Choir Competition | Indian Classical Solo singing Competition",
-    image: "indianswaranjali.png",
-    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
-    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
-  },
-   
-    {
-    name: "LAASYA",
-    day: "Day 2",
-    description: "Group Folk Dance Competition",
-    image: "groupabhivyakti.png",
-    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdwoBeJB8Jlcr4hStgOuJkzA6b47xwPGRoqlcEp95cKVedLJg/viewform"
-  },
-  {
-    name: "TAAL TARANG'24",
-    day: "Day 2",
-    description: "NRITYA MANTHAN- Group Indian Classical Dance Competitions",
-    image: "groupkavya.png",
-    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
-  },
-  {
-    name: "TAAL TARANG'24",
-    day: "Day 3 ",
-    description: "NRITYA SANGAM- Solo Face Off Indian Classical Dance Competition",
-    image: "solfacekavya.png",
-    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfN9XK9-E6woFjWKGXA-FevMddzYyEqwmm5mDhvhkGKQMBSZg/viewform"
-  },
-  {
-    name: "RACHNOTSAV,24",
+    name: "Event 3",
     day: "Day 3",
-    description: "Band Showcase ",
-    image: "bandswaranjali.png",
-    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
-    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "event3.png",
+    organizedBy: "Dramatics Society",
+    registrationLink: "#"
+  },
+  {
+    name: "Event 4",
+    day: "Day 1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: "event4.png",
+    organizedBy: "Music Society",
+    registrationLink: "#"
   }
-
 ];
 
 /* Sponsors section constants */
@@ -280,18 +185,8 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 1",
-        image: "",
+        image: "sponsor1.png",
         link: "#"
-      }
-    ]
-  ],
-   [
-    "Study Partner",
-    [
-      {
-        name: "Physics Wallah",
-        image: "pw.png",
-        link: "https://www.pw.live/"
       }
     ]
   ],
@@ -300,12 +195,12 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 2",
-        image: "",
+        image: "sponsor2.png",
         link: "#"
       },
       {
         name: "Sponsor 3",
-        image: "",
+        image: "sponsor3.png",
         link: "#"
       }
     ]
@@ -315,17 +210,17 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 4",
-        image: "",
+        image: "sponsor4.png",
         link: "#"
       },
       {
         name: "Sponsor 5",
-        image: "",
+        image: "sponsor5.png",
         link: "#"
       },
       {
         name: "Sponsor 6",
-        image: "",
+        image: "sponsor6.png",
         link: "#"
       }
     ]

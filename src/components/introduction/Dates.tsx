@@ -37,7 +37,7 @@ export default function Dates() {
           {DATES.map(({ numeral, date, description }, index) => (
             <Date
               key={index}
-              src={`/assets/images/posters${index + 1}.jpg`}
+              src={`/assets/images/poster${index + 1}.jpg`}
               numeral={numeral}
               date={date}
               description={description}

@@ -20,10 +20,11 @@ export default function Navbar({
   const menuItems = [
     { name: "Home", offset: 0 },
     { name: "Dates", offset: 1 },
-    { name: "Artist", offset: 2 },
-    { name: "FAQ", offset: 3 },
-    { name: "Events", offset: 4 },
-    { name: "Sponsors", offset: 5 }
+    { name: "About", offset: 2 },
+    { name: "Artist", offset: 3 },
+    { name: "FAQ", offset: 4 },
+    { name: "Events", offset: 5 },
+    { name: "Sponsors", offset: 6 }
   ];
 
   /* Animate menu in and out */
@@ -75,7 +76,7 @@ export default function Navbar({
         className="fixed left-0 top-0 z-[1000] h-screen w-full p-2 md:max-w-[400px]"
         style={spring}
       >
-        <div className="relative flex h-full w-full flex-col items-center justify-center rounded-lg bg-secondary-300/50 p-8 backdrop-blur-md md:items-start md:px-16">
+        <div className="relative flex h-full w-full flex-col items-center justify-center rounded-lg bg-secondary-300/50 p-4 backdrop-blur-md md:items-start md:px-16">
           <Button
             className="absolute right-0 top-0 m-4 bg-accent-700"
             onClick={() => setShowMenu(false)}

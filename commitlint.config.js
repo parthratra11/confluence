@@ -15,7 +15,7 @@ module.exports = {
         "chore",
         "revert",
         "ci",
-        "content" // Since the content is deeply tighltly coupled with the code, it's better to have a separate commit type for it
+        "content" // Since the content is deeply tightly coupled with the code, it's better to have a separate commit type for it
       ]
     ]
   }

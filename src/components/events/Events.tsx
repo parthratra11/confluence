@@ -9,7 +9,7 @@ import { EVENTS as events } from "@/content/constants";
 
 export default function Events() {
   return (
-    <Section offset={4} mdAlign="right">
+    <Section offset={5} mdAlign="right">
       <Heading align="center">Events</Heading>
       <div className="no-scrollbar h-[90%] overflow-y-auto">
         <EventsCarousel

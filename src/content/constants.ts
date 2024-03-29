@@ -42,7 +42,7 @@ export const ARTISTS = [
       name: "DG IMMORTALS",
       description:
         "Contemporary Hip Hop artist DG IMMORTALS is from Delhi, India. DG IMMORTALS has been creating waves in the Indian music world with its distinctive and modern sound.",
-      image: "dgmortal.png"
+      image: "dgimmortal.png"
     },
     {
       prefix: "Introducing",
@@ -158,7 +158,7 @@ export const EVENTS = [
     name: "GROOVE VOL 3.",
     day: "Day 1",
     description: "Western Group Dance Competition",
-    image: "oorja 2.png",
+    image: "oorja2.png",
     organizedBy: "Oorja -The Western & Street Dance Society ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
@@ -167,7 +167,7 @@ export const EVENTS = [
     name: "CHOREO'24",
     day: "Day 1",
     description: "The Annual Theme Dance Competition ",
-    image: "choreo24.jpg",
+    image: "choreo.png",
     organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
@@ -187,7 +187,7 @@ export const EVENTS = [
     day: "Day 1",
     description:
       "Let's joyfully honor the boundless range of Nukkad Natak, filling every space with vivid colors.",
-    image: "bolbala.jpeg",
+    image: "bolbala.png",
     organizedBy: "Dramatics Society, Hansraj College",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
@@ -196,7 +196,7 @@ export const EVENTS = [
     name: "BLEEDAT VOL 3.",
     day: "Day 2",
     description: "Crew VS Crew Dance Competition",
-    image: "OORJA 1.png",
+    image: "oorja1.png",
     organizedBy: "Oorja -The Western & Street Dance Society ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
@@ -205,7 +205,7 @@ export const EVENTS = [
     name: "BLEEDAT VOL 3.",
     day: "Day 2",
     description: "1 VS 1 Dance Competition",
-    image: "OORJA 3.png",
+    image: "oorja3.png",
     organizedBy: "Oorja -The Western & Street Dance Society ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"

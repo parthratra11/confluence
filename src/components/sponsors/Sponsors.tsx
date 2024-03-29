@@ -8,16 +8,16 @@ import { SPONSORS as sponsors } from "@/content/constants";
 
 export default function Sponsors() {
   return (
-    <Section offset={5} containerClassName="bg-red-900" mdAlign="left">
-      <Heading align="left" className="text-secondary-200">
-        Credit <span className="text-secondary-700">Roll </span>
-        for the <span className="text-secondary-700">Sponsors</span>
+    <Section offset={6} containerClassName="bg-red-100" mdAlign="left" fullWidth>
+      <Heading align="left" className="text-tertiary-700">
+        Credit <span className="text-accent-700">Roll </span>
+        for the <span className="text-accent-700">Sponsors</span>
       </Heading>
       <div className="mt-8 h-[70%] overflow-y-hidden">
         <div className="no-scrollbar sponsors-animation flex h-full flex-col gap-8 p-4 text-center">
           {sponsors.map((collection, index) => (
             <div key={index}>
-              <h2 className="display mb-4 text-2xl text-secondary-700">
+              <h2 className="display mb-4 text-2xl text-accent-700">
                 {collection[0]}
               </h2>
               <div className="flex flex-wrap items-center justify-center gap-8">

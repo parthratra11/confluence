@@ -35,7 +35,7 @@ export const ARTISTS = [
       image: "dgmortal.png"
     },
     {
-      prefix: "Keep Waiting!",
+      prefix: "Keep Looking!",
       name: "COMING SOON",
       description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
@@ -44,13 +44,13 @@ export const ARTISTS = [
   [
     // Day 2
     {
-      prefix: "Keep Waiting!",
+      prefix: "Keep Looking!",
       name: "COMING SOON",
       description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     },
     {
-      prefix: "Keep Waiting!",
+      prefix: "Keep Looking!",
       name: "COMING SOON",
       description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
@@ -60,13 +60,13 @@ export const ARTISTS = [
   [
     // Day 3
      {
-      prefix: "Keep Waiting!",
+      prefix: "Keep Looking!",
       name: "COMING SOON",
       description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     },
     {
-      prefix: "Keep Waiting!",
+      prefix: "Keep Looking!",
       name: "COMING SOON",
       description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
@@ -125,6 +125,30 @@ export const EVENTS = [
     organizedBy: "Oorja -The Western & Street Dance Society ",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
   },
+   {
+    name: "CHOREO'24",
+    day: "Day 1",
+    description: "The Annual Theme Dance Competition ",
+    image: "choreo24.jpg",
+    organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
+  },
+  {
+    name: "RACHNOTSAV,24",
+    day: "Day 1",
+    description: "Western Acapella Competition | Western Solo singing Competition",
+    image: "westernswaranjali.png",
+    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
+    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+  {
+    name: "BOLBALA",
+    day: "Day 1",
+    description: "Let's joyfully honor the boundless range of Nukkad Natak, filling every space with vivid colors.",
+    image: "bolbala.jpeg",
+    organizedBy: "Dramatics Society, Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
+  },
   {
     name: "BLEEDAT VOL 3.",
     day: "Day 2",
@@ -136,19 +160,77 @@ export const EVENTS = [
   {
     name: "BLEEDAT VOL 3.",
     day: "Day 2",
-    description: "1 VS 1 Dance Competition ",
-    image: "oorja 3.png",
-    organizedBy: "Oorja -The Western & Street Dance Society",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfl--JCAKYAwKj0ONir9vBriNFGImX58ijRruxkiEmd4_IZFg/viewform"
+    description: "1 VS 1 Dance Competition",
+    image: "OORJA 3.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
   },
   {
-    name: "BOLBALA",
-    day: "Day 1",
-    description: "Let's joyfully honor the boundless range of Nukkad Natak, filling every space with vivid colors.",
-    image: "bolbala.jpeg",
-    organizedBy: "Dramatics Society",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
+    name: "NRITYA RATI",
+    day: "Day 2",
+    description: "Solo Folk Dance Competition",
+    image: "soloabhivyakti.png",
+    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScG7pIvUqFGMFr5GwbMJeiLpRzqJj17FWLXt0RtLLLO3fgpsA/viewform"
+  },
+  {
+    name: "TAAL TARANG'24",
+    day: "Day 2",
+    description: "NRITYA SPARSH- Solo Indian Classical Dance Competitions | NRITYA MILAAP- Duet Indian Classical Dance Competitions",
+    image: "Duetkavya.png",
+    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
+  },
+  {
+    name: "TAAL TARANG'24",
+    day: "Day 2",
+    description: "NRITYA MANTHAN- Group Indian Classical Dance Competitions",
+    image: "groupkavya.png",
+    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
+  },
+   {
+    name: "RACHNOTSAV,24",
+    day: "Day 2",
+    description: "Indian Classical Choir Competition | Indian Classical Solo singing Competition",
+    image: "indianswaranjali.png",
+    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
+    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+   
+    {
+    name: "LAASYA",
+    day: "Day 2",
+    description: "Group Folk Dance Competition",
+    image: "groupabhivyakti.png",
+    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdwoBeJB8Jlcr4hStgOuJkzA6b47xwPGRoqlcEp95cKVedLJg/viewform"
+  },
+  {
+    name: "TAAL TARANG'24",
+    day: "Day 2",
+    description: "NRITYA MANTHAN- Group Indian Classical Dance Competitions",
+    image: "groupkavya.png",
+    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
+  },
+  {
+    name: "TAAL TARANG'24",
+    day: "Day 3 ",
+    description: "NRITYA SANGAM- Solo Face Off Indian Classical Dance Competition",
+    image: "solfacekavya.png",
+    organizedBy: "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfN9XK9-E6woFjWKGXA-FevMddzYyEqwmm5mDhvhkGKQMBSZg/viewform"
+  },
+  {
+    name: "RACHNOTSAV,24",
+    day: "Day 3",
+    description: "Band Showcase ",
+    image: "bandswaranjali.png",
+    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
+    registrationLink: "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
   }
+
 ];
 
 /* Sponsors section constants */
@@ -160,8 +242,18 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 1",
-        image: "sponsor1.png",
+        image: "",
         link: "#"
+      }
+    ]
+  ],
+   [
+    "Study Partner",
+    [
+      {
+        name: "Physics Wallah",
+        image: "pw.png",
+        link: "https://www.pw.live/"
       }
     ]
   ],
@@ -170,12 +262,12 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 2",
-        image: "sponsor2.png",
+        image: "",
         link: "#"
       },
       {
         name: "Sponsor 3",
-        image: "sponsor3.png",
+        image: "",
         link: "#"
       }
     ]
@@ -185,17 +277,17 @@ export const SPONSORS: SponsorsArrayType[] = [
     [
       {
         name: "Sponsor 4",
-        image: "sponsor4.png",
+        image: "",
         link: "#"
       },
       {
         name: "Sponsor 5",
-        image: "sponsor5.png",
+        image: "",
         link: "#"
       },
       {
         name: "Sponsor 6",
-        image: "sponsor6.png",
+        image: "",
         link: "#"
       }
     ]

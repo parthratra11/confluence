@@ -9,9 +9,9 @@ import { FAQ as faq } from "@/content/constants";
 
 export default function FAQ() {
   return (
-    <Section offset={3} containerClassName="bg-red-900" mdAlign="left">
+    <Section offset={4} containerClassName="bg-red-100" mdAlign="left">
       <div className="h-full md:m-auto md:max-w-[800px]">
-        <Heading align="center" className="text-secondary-200">
+        <Heading align="center" className="text-tertiary-700">
           FAQ
         </Heading>
         <div className="h-full overflow-y-auto p-4 py-8">
@@ -48,7 +48,7 @@ const Question = ({
 }: {
   value: string;
   question: string;
-  answer: string;
+  answer: string | string[];
 }) => {
   return (
     <Accordion.Item
@@ -59,7 +59,14 @@ const Question = ({
         {question}
       </Accordion.Trigger>
       <Accordion.Content className="w-full py-4 text-left">
-        {answer}
+        {
+          typeof answer === "string" ? answer
+          : <ul className="list-outside list-disc">
+            {answer.map((point, index) => {
+              return <li key={index}>{point}</li>
+            })}
+          </ul>
+        }
       </Accordion.Content>
     </Accordion.Item>
   );

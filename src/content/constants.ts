@@ -29,61 +29,62 @@ export const ARTISTS = [
   [
     // Day 1
     {
-      prefix: "One and Only",
-      name: "Shah Rukh Khan",
-      description: "The King Khan. The majestic star, yada yada.",
-      image: "artist1.png"
+      prefix: "One and only",
+      name: "DG IMMORTALS",
+      description: "Contemporary Hip Hop artist DG IMMORTALS is from Delhi, India. DG IMMORTALS has been creating waves in the Indian music world with its distinctive and modern sound.",
+      image: "dgmortal.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 2 (Day 1)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      prefix: "Keep Waiting!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
+      image: "placeholder.png"
     }
   ],
   [
     // Day 2
     {
-      prefix: "Introducing",
-      name: "Artist 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      prefix: "Keep Waiting!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
+      image: "placeholder.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 1 (Day 2)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist1.png"
+      prefix: "Keep Waiting!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
+      image: "placeholder.png"
     }
+   
   ],
   [
     // Day 3
-    {
-      prefix: "Introducing",
-      name: "Artist 3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist3.png"
+     {
+      prefix: "Keep Waiting!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
+      image: "placeholder.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 2 (Day 1)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      prefix: "Keep Waiting!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
+      image: "placeholder.png"
     }
   ]
 ];
 
 /* FAQ section constants */
 export const FAQ = [
-  {
-    question: "What is Confluence?",
+ {
+    question: " What is Confluence’24?",
     answer:
-      "Confluence is the annual cultural fest of Hansraj College, University of Delhi."
+      "Confluence is annual cultural fest held by prestigious Hansraj college of University of Delhi. Confluence is the ultimate culmination of talent, creativity, and innovation drawing participants and attendees from all the corners of country. It is blend of art, performance, competition and events."
   },
   {
-    question: "Where will Confluence take place?",
+    question: "When and where will the Confluence be organised ?",
     answer:
-      "Confluence will be held inside the premises of Hansraj College, University of Delhi."
+      "The Confluence will be held on dates of 6th,7th and 8th April and the venue is  campus of Hansraj College, University of Delhi."
   },
   {
     question: "Will non-DU students be allowed entry?",
@@ -91,52 +92,62 @@ export const FAQ = [
       "Yes. Confluence is open to all students, regardless of their college or university."
   },
   {
-    question: "How can I register for Confluence?",
+    question: "What if I am not able register through website?",
     answer:
-      "Just click on the any of the Register buttons on this website, and you'll be good to go!"
+      "You can also register through the respective society as well through which you are participating."
   },
   {
     question:
       "What other societal events are being held, apart from the main fest?",
     answer:
       "Just check out the section below to find out the details and registration links for all the events being organized by different societies of Hansraj College, under the umbrella of Confluence."
+  },
+  {
+    question:
+      "Whom should I contact if there is further question regarding the event?",
+    answer:
+      `Contact on the no. given below:\n
+  Shivam Kumar-758001927 [President]\n
+  Rajeev Rathore-8962345146 [Coordinator]\n
+  Kuber Kumar Sahoo -9810778091\n
+  Email id – Studentunion@hrc.du.ac.in`
   }
 ];
 
 /* Events section constants */
 export const EVENTS = [
   // Order here determines the order on the website
-  {
-    name: "Event 1",
+ {
+    name: "GROOVE VOL 3.",
     day: "Day 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "event1.png",
-    organizedBy: "Dramatics Society",
-    registrationLink: "#"
+    description: "Western Group Dance Competition",
+    image: "oorja 2.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
   },
   {
-    name: "Event 2",
+    name: "BLEEDAT VOL 3.",
     day: "Day 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "event2.png",
-    organizedBy: "Dramatics Society",
-    registrationLink: "#"
+    description: "Crew VS Crew Dance Competition",
+    image: "OORJA 1.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
   },
   {
-    name: "Event 3",
-    day: "Day 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "event3.png",
-    organizedBy: "Dramatics Society",
-    registrationLink: "#"
+    name: "BLEEDAT VOL 3.",
+    day: "Day 2",
+    description: "1 VS 1 Dance Competition ",
+    image: "oorja 3.png",
+    organizedBy: "Oorja -The Western & Street Dance Society",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfl--JCAKYAwKj0ONir9vBriNFGImX58ijRruxkiEmd4_IZFg/viewform"
   },
   {
-    name: "Event 4",
+    name: "BOLBALA",
     day: "Day 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "event4.png",
-    organizedBy: "Music Society",
-    registrationLink: "#"
+    description: "Let's joyfully honor the boundless range of Nukkad Natak, filling every space with vivid colors.",
+    image: "bolbala.jpeg",
+    organizedBy: "Dramatics Society",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
   }
 ];
 

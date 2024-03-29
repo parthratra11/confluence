@@ -21,7 +21,7 @@ export default function Sponsor({
           className="h-16 w-32 object-contain"
         />
       </Link>
-      <span className="text-center font-medium text-secondary-300">{name}</span>
+      <span className="text-center font-medium text-tertiary-700">{name}</span>
     </div>
   );
 }

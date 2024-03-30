@@ -73,7 +73,7 @@ function Slide({
         width={320}
         height={640}
         alt={name}
-        className="absolute left-[-20vw] object-contain md:left-0"
+        className="absolute left-[5vw] object-contain md:left-0"
       />
       <div className="z-50 flex max-w-[240px] flex-col items-end p-4 md:max-w-[360px]">
         <h2 className="display text-4xl text-secondary-200 md:text-6xl">

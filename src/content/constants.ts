@@ -48,7 +48,7 @@ export const ARTISTS = [
       prefix: "Introducing",
       name: "Artist 2 (Day 1)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      image: "placeholder.png"
     }
   ],
   [
@@ -57,13 +57,13 @@ export const ARTISTS = [
       prefix: "Introducing",
       name: "Artist 2",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      image: "placeholder.png"
     },
     {
       prefix: "Introducing",
       name: "Artist 1 (Day 2)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist1.png"
+      image: "placeholder.png"
     }
   ],
   [
@@ -78,7 +78,7 @@ export const ARTISTS = [
       prefix: "Introducing",
       name: "Artist 2 (Day 1)",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "artist2.png"
+      image: "placeholder.png"
     }
   ]
 ];
@@ -173,7 +173,7 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
   },
   {
-    name: "RACHNOTSAV,24",
+    name: "RACHNOTSAV'24",
     day: "Day 1",
     description:
       "Western Acapella Competition | Western Solo singing Competition",

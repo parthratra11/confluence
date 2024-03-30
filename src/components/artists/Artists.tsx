@@ -1,4 +1,4 @@
-// Internal depedencies
+// Internal dependencies
 import ArtistsCarousel from "./ArtistsCarousel";
 
 import Section from "@/components/Section";

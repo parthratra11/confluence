@@ -177,7 +177,7 @@ export const EVENTS = [
     day: "Day 1",
     description:
       "Western Acapella Competition | Western Solo singing Competition",
-    image: "westernswaranjali.png",
+    image: "Westernswaranjali.png",
     organizedBy: "SWARANJALI - The Music Society of Hansraj College",
     registrationLink:
       "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
@@ -300,14 +300,14 @@ export const SPONSORS: SponsorsArrayType[] = [
     "Title Sponsor",
     [
       {
-        name: "Sponsor 1",
-        image: "sponsor1.png",
-        link: "#"
+        name: "Acer",
+        image: "acer.png",
+        link: "https://www.acer.com/in-en"
       }
     ]
   ],
   [
-    "Study Partner",
+    "Education Partner",
     [
       {
         name: "Physics Wallah",
@@ -317,37 +317,22 @@ export const SPONSORS: SponsorsArrayType[] = [
     ]
   ],
   [
-    "Media Sponsor",
+    "Media Partner",
     [
       {
-        name: "Sponsor 2",
-        image: "sponsor2.png",
-        link: "#"
-      },
-      {
-        name: "Sponsor 3",
-        image: "sponsor3.png",
+        name: "DU Today",
+        image: "dutoday.png",
         link: "#"
       }
     ]
   ],
   [
-    "Food Partner",
+    "Hospitality Partner",
     [
       {
-        name: "Sponsor 4",
-        image: "sponsor4.png",
-        link: "#"
-      },
-      {
-        name: "Sponsor 5",
-        image: "sponsor5.png",
-        link: "#"
-      },
-      {
-        name: "Sponsor 6",
-        image: "sponsor6.png",
-        link: "#"
+        name: "ITC Limited",
+        image: "itc-limited-logo.png",
+        link: "https://www.itcportal.com/"
       }
     ]
   ]

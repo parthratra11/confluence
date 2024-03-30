@@ -45,24 +45,24 @@ export const ARTISTS = [
       image: "dgimmortal.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 2 (Day 1)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      prefix: "Keep Looking!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     }
   ],
   [
     // Day 2
     {
-      prefix: "Introducing",
-      name: "Artist 2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      prefix: "Keep Looking!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 1 (Day 2)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      prefix: "Keep Looking!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     }
   ],
@@ -75,9 +75,9 @@ export const ARTISTS = [
       image: "placeholder.png"
     },
     {
-      prefix: "Introducing",
-      name: "Artist 2 (Day 1)",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      prefix: "Keep Looking!",
+      name: "COMING SOON",
+      description: "Till then keep guessing and stay tuned.",
       image: "placeholder.png"
     }
   ]

@@ -9,20 +9,23 @@ export default function Section({
   offset,
   mdAlign,
   fullWidth,
+  freeHeight,
   containerClassName
 }: {
   children: ReactNode;
   offset: number;
   mdAlign?: "left" | "right";
   fullWidth?: boolean;
+  freeHeight?: boolean;
   containerClassName?: string;
 }) {
   return (
     <ParallaxLayer offset={offset}>
       <div
         className={twMerge(
-          `no-scrollbar h-screen overflow-y-hidden bg-tertiary-900 p-8 py-16`,
-          !fullWidth ? "md:max-w-[1280px]" : "", 
+          `no-scrollbar overflow-y-hidden bg-tertiary-900 p-8 py-16`,
+          !freeHeight ? "h-screen" : "h-fit",
+          !fullWidth ? "md:max-w-[1280px]" : "",
           mdAlign === "left" ? "md:ml-0 md:mr-auto md:rounded-r-lg" : "",
           mdAlign === "right" ? "md:ml-auto md:mr-0 md:rounded-l-lg" : "",
           containerClassName

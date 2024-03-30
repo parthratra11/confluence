@@ -4,27 +4,32 @@ import Section from "@/components/Section";
 
 import { ABOUT as about } from "@/content/constants";
 import { animated, useInView, useTrail } from "@react-spring/web";
+import Image from "next/image";
 import { useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function About() {
   return (
-    <Section
-      offset={2}
-      mdAlign="left"
-      containerClassName="bg-red-100"
-      fullWidth
-    >
-      <Heading align="left" className="text-tertiary-700">
+    <Section offset={2} mdAlign="left" fullWidth>
+      <Heading align="left" className="text-secondary-200">
         {"What is "}
         <span className="text-accent-700">{"Confluence"}</span>
       </Heading>
-      <TextSlide />
+      <div className="flex flex-row justify-between">
+        <TextSlide containerClassName={"min-h-[70vh]"} />
+        <Image
+          src={"/logo-white.svg"}
+          className="hidden aspect-square max-w-[800px] md:block"
+          width={450}
+          height={450}
+          alt={"confluence"}
+        />
+      </div>
     </Section>
   );
 }
 
-function TextSlide() {
+function TextSlide({ containerClassName }: { containerClassName: string }) {
   /* Animate when in view */
   const [sectionRef, sectionInView] = useInView();
 
@@ -48,7 +53,10 @@ function TextSlide() {
 
   return (
     <div
-      className="g-8 mt-8 flex h-[70%] flex-col justify-between p-4"
+      className={twMerge(
+        "g-8 mt-8 flex min-h-[100%] flex-col justify-between p-4",
+        containerClassName
+      )}
       ref={sectionRef}
     >
       {trail.map((props, index: number) => (
@@ -56,7 +64,7 @@ function TextSlide() {
           key={index}
           style={props}
           className={twMerge(
-            "text-justify text-sm text-slate-950 md:text-lg",
+            "text-justify text-sm text-secondary-200 md:text-lg",
             "first-letter:confluence first-letter:text-lg first-letter:font-semibold first-letter:capitalize first-letter:text-accent-700"
           )}
         >

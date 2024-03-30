@@ -352,3 +352,37 @@ export const SPONSORS: SponsorsArrayType[] = [
     ]
   ]
 ];
+
+/* Social media handles */
+export const SOCIALS: {
+  name: string;
+  handle: string;
+  iconSrc: string;
+}[] = [
+  {
+    name: "Instagram",
+    handle: "https://www.instagram.com/confluence.hrc/",
+    iconSrc: "/assets/socials/instagram.png"
+  },
+  {
+    name: "Gmail",
+    handle: "mailto:studentunion@hrc.du.ac.in",
+    iconSrc: "/assets/socials/google.png"
+  }
+];
+
+/* DO NOT CHANGE */
+/* For developers only */
+export const MENU_ITEMS: {
+  name: string;
+  offset: number;
+}[] = [
+  { name: "Home", offset: 0 },
+  { name: "Dates", offset: 1 },
+  { name: "About", offset: 2 },
+  { name: "Theme", offset: 3 },
+  { name: "Artist", offset: 4 },
+  { name: "FAQ", offset: 5 },
+  { name: "Events", offset: 6 },
+  { name: "Sponsors", offset: 7 }
+];

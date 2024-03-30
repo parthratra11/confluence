@@ -10,23 +10,13 @@ import type { IParallax } from "@react-spring/parallax";
 import Button from "./Button";
 
 // Content dependencies
-import { REGISTRATION_URL } from "@/content/constants";
+import { REGISTRATION_URL, MENU_ITEMS as menuItems } from "@/content/constants";
 
 export default function Navbar({
   parallax
 }: {
   parallax: RefObject<IParallax>;
 }) {
-  const menuItems = [
-    { name: "Home", offset: 0 },
-    { name: "Dates", offset: 1 },
-    { name: "About", offset: 2 },
-    { name: "Artist", offset: 3 },
-    { name: "FAQ", offset: 4 },
-    { name: "Events", offset: 5 },
-    { name: "Sponsors", offset: 6 }
-  ];
-
   /* Animate menu in and out */
   const [showMenu, setShowMenu] = useState(false);
   const [menuRef, menuInView] = useInView();
@@ -96,7 +86,7 @@ export default function Navbar({
                   }}
                   key={index}
                   style={props}
-                  className="display text-tertiary-700"
+                  className="display text-tertiary-700 md:text-5xl"
                 >
                   {menuItems[index].name}
                 </animated.a>

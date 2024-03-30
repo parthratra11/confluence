@@ -9,7 +9,7 @@ import { FAQ as faq } from "@/content/constants";
 
 export default function FAQ() {
   return (
-    <Section offset={4} containerClassName="bg-red-100" mdAlign="left">
+    <Section offset={5} containerClassName="bg-red-100" mdAlign="left">
       <div className="h-full md:m-auto md:max-w-[800px]">
         <Heading align="center" className="text-tertiary-700">
           FAQ

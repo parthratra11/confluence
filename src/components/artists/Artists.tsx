@@ -6,7 +6,7 @@ import Heading from "@/components/Heading";
 
 export default function Artists() {
   return (
-    <Section offset={3} mdAlign="right" containerClassName="pl-0">
+    <Section offset={4} mdAlign="right" containerClassName="pl-0">
       <div className="h-full md:m-auto md:max-w-[1080px]">
         <Heading>
           Meet the <span className="text-accent-700">Artists</span>

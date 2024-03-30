@@ -8,7 +8,12 @@ import { SPONSORS as sponsors } from "@/content/constants";
 
 export default function Sponsors() {
   return (
-    <Section offset={6} containerClassName="bg-red-100" mdAlign="left" fullWidth>
+    <Section
+      offset={7}
+      containerClassName="bg-red-100"
+      mdAlign="left"
+      fullWidth
+    >
       <Heading align="left" className="text-tertiary-700">
         Credit <span className="text-accent-700">Roll </span>
         for the <span className="text-accent-700">Sponsors</span>

@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import Jumbotron from "@/components/introduction/Jumbotron";
 import Navbar from "@/components/Navbar";
 import Sponsors from "@/components/sponsors/Sponsors";
+import Theme from "@/components/theme/Theme";
 
 const Home = () => {
   const parallax = useRef<IParallax>(null);
@@ -25,15 +26,16 @@ const Home = () => {
         </title>
       </Head>
       <Navbar parallax={parallax} />
-      <Parallax ref={parallax} pages={7} className="bg-primary-200">
+      <Parallax ref={parallax} pages={9} className="bg-primary-200">
         <Jumbotron />
         <About />
+        <Theme />
         <Artists />
         <FAQ />
         <Events />
         <Sponsors />
+        <Footer parallax={parallax} />
       </Parallax>
-      <Footer />
     </>
   );
 };

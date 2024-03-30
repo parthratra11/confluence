@@ -59,14 +59,15 @@ const Question = ({
         {question}
       </Accordion.Trigger>
       <Accordion.Content className="w-full py-4 text-left">
-        {
-          typeof answer === "string" ? answer
-          : <ul className="list-outside list-disc">
+        {typeof answer === "string" ? (
+          answer
+        ) : (
+          <ul className="list-outside list-disc">
             {answer.map((point, index) => {
-              return <li key={index}>{point}</li>
+              return <li key={index}>{point}</li>;
             })}
           </ul>
-        }
+        )}
       </Accordion.Content>
     </Accordion.Item>
   );

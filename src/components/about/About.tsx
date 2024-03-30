@@ -16,7 +16,7 @@ export default function About() {
         <span className="text-accent-700">{"Confluence"}</span>
       </Heading>
       <div className="flex flex-row justify-between">
-        <TextSlide containerClassName={"min-h-[70vh]"} />
+        <TextSlide />
         <Image
           src={"/logo-white.svg"}
           className="hidden aspect-square max-w-[800px] md:block"
@@ -29,7 +29,7 @@ export default function About() {
   );
 }
 
-function TextSlide({ containerClassName }: { containerClassName: string }) {
+function TextSlide() {
   /* Animate when in view */
   const [sectionRef, sectionInView] = useInView();
 
@@ -53,10 +53,7 @@ function TextSlide({ containerClassName }: { containerClassName: string }) {
 
   return (
     <div
-      className={twMerge(
-        "g-8 mt-8 flex min-h-[100%] flex-col justify-between p-4",
-        containerClassName
-      )}
+      className={"g-8 mt-8 flex min-h-[50vh] flex-col justify-between p-4"}
       ref={sectionRef}
     >
       {trail.map((props, index: number) => (

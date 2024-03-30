@@ -10,7 +10,7 @@ export default function Theme() {
     <Section
       offset={3}
       mdAlign="left"
-      containerClassName="bg-red-100"
+      containerClassName="bg-red-100 overflow-x-clip"
       fullWidth
     >
       <JumboText />
@@ -83,7 +83,7 @@ function Description() {
         ref={textRef}
         key={index}
         style={spring}
-        className="first-letter:confluence mt-20 text-justify text-base first-letter:text-lg first-letter:font-semibold first-letter:capitalize first-letter:text-accent-700 md:text-lg"
+        className="first-letter:confluence mt-20 text-justify text-base first-letter:text-lg first-letter:font-semibold first-letter:capitalize first-letter:text-accent-700 overflow-x-clip md:text-lg"
       >
         {sentence}
       </animated.p>

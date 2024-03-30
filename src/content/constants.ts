@@ -1,5 +1,5 @@
 /* General constants */
-export const REGISTRATION_URL = "#";
+export const REGISTRATION_URL = "https://forms.gle/QZdaYqTE3debt4kn9";
 
 /* About Confluence */
 export const ABOUT = [
@@ -322,7 +322,7 @@ export const SPONSORS: SponsorsArrayType[] = [
       {
         name: "DU Today",
         image: "dutoday.png",
-        link: "#"
+        link: "https://www.instagram.com/du.today?igsh=dHZ5eXB4anQycXhi"
       }
     ]
   ],

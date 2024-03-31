@@ -289,6 +289,15 @@ export const EVENTS = [
     organizedBy: "SWARANJALI - The Music Society of Hansraj College",
     registrationLink:
       "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+  {
+    name: "ALLURE'24",
+    day: "Day 3",
+    description: "Fashion Competition in Teams",
+    image: "allure.jpg",
+    organizedBy: "Vintago - The Fashion Society, Hansraj College",
+    registrationLink:
+      "https://forms.gle/E2nHTmuNBebTFRvHA"
   }
 ];
 

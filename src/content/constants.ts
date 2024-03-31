@@ -271,6 +271,15 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
   },
   {
+    name: "ALLURE'24",
+    day: "Day 2",
+    description: "Fashion Competition in Teams",
+    image: "allure.jpg",
+    organizedBy: "Vintago - The Fashion Society, Hansraj College",
+    registrationLink:
+      "https://forms.gle/E2nHTmuNBebTFRvHA"
+  },
+  {
     name: "TAAL TARANG'24",
     day: "Day 3 ",
     description:
@@ -289,15 +298,6 @@ export const EVENTS = [
     organizedBy: "SWARANJALI - The Music Society of Hansraj College",
     registrationLink:
       "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
-  },
-  {
-    name: "ALLURE'24",
-    day: "Day 3",
-    description: "Fashion Competition in Teams",
-    image: "allure.jpg",
-    organizedBy: "Vintago - The Fashion Society, Hansraj College",
-    registrationLink:
-      "https://forms.gle/E2nHTmuNBebTFRvHA"
   }
 ];
 

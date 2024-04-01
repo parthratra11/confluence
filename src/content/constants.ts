@@ -297,7 +297,7 @@ export const EVENTS = [
     organizedBy: "Vintago - The Fashion Society, Hansraj College",
     registrationLink:
       "https://forms.gle/E2nHTmuNBebTFRvHA"
-  },
+  }
 ];
 
 /* Sponsors section constants */

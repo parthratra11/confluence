@@ -183,6 +183,16 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
   },
   {
+    name: "NIRMIT",
+    day: "Day 2",
+    description:
+      "Invest Create Compete",
+    image: "nirmit.png",
+    organizedBy: "Kalakriti - The Fine Arts Society of Hansraj College",
+    registrationLink:
+      "https://unstop.com/events/artistic-mockstock-competition-hansraj-collegeuniversity-of-delhi-942810"
+  },
+  {
     name: "TAAL TARANG'24",
     day: "Day 2",
     description:
@@ -252,6 +262,24 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
   },
   {
+    name: "SIRJAN",
+    day: "Day 1",
+    description: "A Reel Making Competition",
+    image: "srijan_pixels.png",
+    organizedBy: "Pixels - The Photography And Videography Society",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfAohYMbuzyEEAaT839YXNcLFU_sgh7C3nlKisxvgJuymXAtQ/viewform"
+  },
+  {
+    name: "PRATIBIMB",
+    day: "Day 1",
+    description: "A Photostory Competition",
+    image: "pratibimb_pixels.png",
+    organizedBy: "Pixels - The Photography And Videography Society",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfAohYMbuzyEEAaT839YXNcLFU_sgh7C3nlKisxvgJuymXAtQ/viewform"
+  },
+  {
     name: "RACHNOTSAV'24",
     day: "Day 1",
     description:
@@ -288,6 +316,15 @@ export const EVENTS = [
     organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
+  },
+  {
+    name: "SANGHARSH",
+    day: "Day 3",
+    description: "Open Stage Competition",
+    image: "udaan.png",
+    organizedBy: "Udaan - The Motivational Society of Hansraj College",
+    registrationLink:
+      "https://forms.gle/iK38knGDCB5teaDf8"
   },
   {
     name: "ALLURE'24",

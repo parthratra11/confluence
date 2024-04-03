@@ -224,6 +224,46 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
   },
   {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "CROSSVERSE | Prompt Based Poetry Writing Competition",
+    image: "crossverse_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSehpzASKOJhGj7yrk-h2C_BX9eR8qAioMzD38NAqdKY-NtWgw/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "Dress Up Poetry Competition",
+    image: "poet_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeyJzuKeI5GQ_nVfGreotJExj15I3s9wVztTPJ6ckvppGE-fg/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "AUTHOR POV | The Annual Panel Discussion",
+    image: "authorspov_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeyJzuKeI5GQ_nVfGreotJExj15I3s9wVztTPJ6ckvppGE-fg/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 3",
+    description: "Slam Poetry Competition",
+    image: "slampoetry_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScANXa5_rcVbklnMioWpduf5j6zYvVaCy7HGbSQMkmhgairXQ/viewform"
+  },
+  {
     name: "TAAL TARANG'24",
     day: "Day 3 ",
     description:
@@ -277,7 +317,7 @@ export const EVENTS = [
     image: "pratibimb_pixels.png",
     organizedBy: "Pixels - The Photography And Videography Society",
     registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfAohYMbuzyEEAaT839YXNcLFU_sgh7C3nlKisxvgJuymXAtQ/viewform"
+      "https://docs.google.com/forms/d/e/1FAIpQLSfPAHazAtTQMvQw6nTTWBUK9BtpMitZ7HjDH4N-UiLtdj6Z7g/viewform"
   },
   {
     name: "RACHNOTSAV'24",

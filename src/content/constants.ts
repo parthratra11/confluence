@@ -1,5 +1,5 @@
 /* General constants */
-export const REGISTRATION_URL = "https://forms.gle/QZdaYqTE3debt4kn9";
+export const REGISTRATION_URL = "https://forms.gle/QeK4RVon1yVBvokD6";
 
 /* About Confluence */
 export const ABOUT = [

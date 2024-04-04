@@ -1,5 +1,5 @@
 /* General constants */
-export const REGISTRATION_URL = "#";
+export const REGISTRATION_URL = "https://forms.gle/QeK4RVon1yVBvokD6";
 
 /* About Confluence */
 export const ABOUT = [
@@ -155,32 +155,22 @@ export const FAQ = [
 export const EVENTS = [
   // Order here determines the order on the website
   {
-    name: "GROOVE VOL 3.",
-    day: "Day 1",
-    description: "Western Group Dance Competition",
-    image: "oorja2.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
+    name: "NRITYA RATI",
+    day: "Day 2",
+    description: "Solo Folk Dance Competition",
+    image: "soloabhivyakti.png",
+    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
     registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
+      "https://docs.google.com/forms/d/e/1FAIpQLScG7pIvUqFGMFr5GwbMJeiLpRzqJj17FWLXt0RtLLLO3fgpsA/viewform"
   },
   {
-    name: "CHOREO'24",
-    day: "Day 1",
-    description: "The Annual Theme Dance Competition ",
-    image: "choreo.png",
-    organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
+    name: "LAASYA",
+    day: "Day 2",
+    description: "Group Folk Dance Competition",
+    image: "groupabhivyakti.png",
+    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
     registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
-  },
-  {
-    name: "RACHNOTSAV'24",
-    day: "Day 1",
-    description:
-      "Western Acapella Competition | Western Solo singing Competition",
-    image: "Westernswaranjali.png",
-    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
-    registrationLink:
-      "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+      "https://docs.google.com/forms/d/e/1FAIpQLSdwoBeJB8Jlcr4hStgOuJkzA6b47xwPGRoqlcEp95cKVedLJg/viewform"
   },
   {
     name: "BOLBALA",
@@ -193,31 +183,14 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
   },
   {
-    name: "BLEEDAT VOL 3.",
+    name: "NIRMIT",
     day: "Day 2",
-    description: "Crew VS Crew Dance Competition",
-    image: "oorja1.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
+    description:
+      "Invest Create Compete",
+    image: "nirmit.png",
+    organizedBy: "Kalakriti - The Fine Arts Society of Hansraj College",
     registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
-  },
-  {
-    name: "BLEEDAT VOL 3.",
-    day: "Day 2",
-    description: "1 VS 1 Dance Competition",
-    image: "oorja3.png",
-    organizedBy: "Oorja -The Western & Street Dance Society ",
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
-  },
-  {
-    name: "NRITYA RATI",
-    day: "Day 2",
-    description: "Solo Folk Dance Competition",
-    image: "soloabhivyakti.png",
-    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLScG7pIvUqFGMFr5GwbMJeiLpRzqJj17FWLXt0RtLLLO3fgpsA/viewform"
+      "https://unstop.com/events/artistic-mockstock-competition-hansraj-collegeuniversity-of-delhi-942810"
   },
   {
     name: "TAAL TARANG'24",
@@ -241,26 +214,6 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
   },
   {
-    name: "RACHNOTSAV,24",
-    day: "Day 2",
-    description:
-      "Indian Classical Choir Competition | Indian Classical Solo singing Competition",
-    image: "indianswaranjali.png",
-    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
-    registrationLink:
-      "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
-  },
-
-  {
-    name: "LAASYA",
-    day: "Day 2",
-    description: "Group Folk Dance Competition",
-    image: "groupabhivyakti.png",
-    organizedBy: "Abhivyakti -The Folk Dance Society, Hansraj College",
-    registrationLink:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdwoBeJB8Jlcr4hStgOuJkzA6b47xwPGRoqlcEp95cKVedLJg/viewform"
-  },
-  {
     name: "TAAL TARANG'24",
     day: "Day 2",
     description: "NRITYA MANTHAN- Group Indian Classical Dance Competitions",
@@ -269,6 +222,46 @@ export const EVENTS = [
       "Kavyakriti- The Indian Classical Dance Society of Hansraj College",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScfGTTo842PRGPWiJcDGOkHxnq4pq0UoUjiKa86RzwrGBIdGA/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "CROSSVERSE | Prompt Based Poetry Writing Competition",
+    image: "crossverse_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSehpzASKOJhGj7yrk-h2C_BX9eR8qAioMzD38NAqdKY-NtWgw/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "Dress Up Poetry Competition",
+    image: "poet_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeyJzuKeI5GQ_nVfGreotJExj15I3s9wVztTPJ6ckvppGE-fg/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 1",
+    description: "AUTHOR POV | The Annual Panel Discussion",
+    image: "authorspov_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeyJzuKeI5GQ_nVfGreotJExj15I3s9wVztTPJ6ckvppGE-fg/viewform"
+  },
+  {
+    name: "VAQIF 8.0",
+    day: "Day 3",
+    description: "Slam Poetry Competition",
+    image: "slampoetry_kavyanjali.jpg",
+    organizedBy:
+      "Kavyanjali - The Poetry Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScANXa5_rcVbklnMioWpduf5j6zYvVaCy7HGbSQMkmhgairXQ/viewform"
   },
   {
     name: "TAAL TARANG'24",
@@ -282,6 +275,71 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSfN9XK9-E6woFjWKGXA-FevMddzYyEqwmm5mDhvhkGKQMBSZg/viewform"
   },
   {
+    name: "GROOVE VOL 3.",
+    day: "Day 1",
+    description: "Western Group Dance Competition",
+    image: "oorja2.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSez1_4T3lvjOPyIF0hAHjaBC_VQK5FY01Z5drHJYXrYKw3Mcg/viewform"
+  },
+  {
+    name: "BLEEDAT VOL 3.",
+    day: "Day 2",
+    description: "Crew VS Crew Dance Competition",
+    image: "oorja1.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
+  },
+  {
+    name: "BLEEDAT VOL 3.",
+    day: "Day 2",
+    description: "1 VS 1 Dance Competition",
+    image: "oorja3.png",
+    organizedBy: "Oorja -The Western & Street Dance Society ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
+  },
+  {
+    name: "SIRJAN",
+    day: "Day 1",
+    description: "A Reel Making Competition",
+    image: "srijan_pixels.png",
+    organizedBy: "Pixels - The Photography And Videography Society",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfAohYMbuzyEEAaT839YXNcLFU_sgh7C3nlKisxvgJuymXAtQ/viewform"
+  },
+  {
+    name: "PRATIBIMB",
+    day: "Day 1",
+    description: "A Photostory Competition",
+    image: "pratibimb_pixels.png",
+    organizedBy: "Pixels - The Photography And Videography Society",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfPAHazAtTQMvQw6nTTWBUK9BtpMitZ7HjDH4N-UiLtdj6Z7g/viewform"
+  },
+  {
+    name: "RACHNOTSAV'24",
+    day: "Day 1",
+    description:
+      "Western Acapella Competition | Western Solo singing Competition",
+    image: "Westernswaranjali.png",
+    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
+    registrationLink:
+      "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+  {
+    name: "RACHNOTSAV,24",
+    day: "Day 2",
+    description:
+      "Indian Classical Choir Competition | Indian Classical Solo singing Competition",
+    image: "indianswaranjali.png",
+    organizedBy: "SWARANJALI - The Music Society of Hansraj College",
+    registrationLink:
+      "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+  {
     name: "RACHNOTSAV,24",
     day: "Day 3",
     description: "Band Showcase ",
@@ -289,6 +347,33 @@ export const EVENTS = [
     organizedBy: "SWARANJALI - The Music Society of Hansraj College",
     registrationLink:
       "https://linktr.ee/swaranjalihansraj?utm_source=linktree_admin_share"
+  },
+  {
+    name: "CHOREO'24",
+    day: "Day 1",
+    description: "The Annual Theme Dance Competition ",
+    image: "choreo.png",
+    organizedBy: "TERPSICHOREAN - The Choreography Society of Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe-d3HN7N__DWmBbUOxUgkpn4lNfZCNn7P3JTK7aT9qArTXrw/viewform"
+  },
+  {
+    name: "SANGHARSH",
+    day: "Day 3",
+    description: "Open Stage Competition",
+    image: "udaan.png",
+    organizedBy: "Udaan - The Motivational Society of Hansraj College",
+    registrationLink:
+      "https://forms.gle/iK38knGDCB5teaDf8"
+  },
+  {
+    name: "ALLURE'24",
+    day: "Day 2",
+    description: "Fashion Competition in Teams",
+    image: "allure.jpg",
+    organizedBy: "Vintago - The Fashion Society, Hansraj College",
+    registrationLink:
+      "https://forms.gle/E2nHTmuNBebTFRvHA"
   }
 ];
 
@@ -322,7 +407,7 @@ export const SPONSORS: SponsorsArrayType[] = [
       {
         name: "DU Today",
         image: "dutoday.png",
-        link: "#"
+        link: "https://www.instagram.com/du.today?igsh=dHZ5eXB4anQycXhi"
       }
     ]
   ],

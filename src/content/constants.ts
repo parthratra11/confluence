@@ -330,9 +330,24 @@ export const SPONSORS: SponsorsArrayType[] = [
     "Hospitality Partner",
     [
       {
-        name: "ITC Limited",
-        image: "itc-limited-logo.png",
-        link: "https://www.itcportal.com/"
+        name: "Fortune Park Kufri Shimla",
+        image: "fortune.png",
+        link: "https://www.itchotels.com/in/en/fortuneparkkufri-shimla/"
+      }
+    ]
+  ],
+  [
+    "Waste Management Partner",
+    [
+      {
+        name: "Haritma, Hansraj College",
+        image: "waste2.png",
+        link: "https://www.instagram.com/hrcharitima/?hl=en/"
+      },
+      {
+        name: "Uboontu Foundation",
+        image: "waste1.png",
+        link: "https://www.uboontufoundation.org/"
       }
     ]
   ]

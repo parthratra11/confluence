@@ -305,7 +305,7 @@ export const EVENTS = [
     name: "OUTSPEAK",
     day: "Day 1",
     description: "An Open Mic Competition",
-    image: "ostreca.png",
+    image: "ostreca.jpeg",
     organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScN-_90O3p3_jB2ay6VdpGDE7-u8gjcfoKmecETwzUGaSBSlg/viewform?usp=send_form"
@@ -314,7 +314,7 @@ export const EVENTS = [
     name: "TABULA RASA",
     day: "Day 1",
     description: "A Prompt Based Writing Competition",
-    image: "ostreca2.png",
+    image: "ostreca2.jpeg",
     organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLScnuUTrSUasBCAO4N5b_jojoqur30d5uEs_0LWxJM01OGDvXA/viewform?usp=send_form"
@@ -323,7 +323,7 @@ export const EVENTS = [
     name: "NEVERLAND ACROSS, NARNIA DOWN",
     day: "Day 3",
     description: "Literature themed Crossword Challenge ",
-    image: "ostreca3.png",
+    image: "ostreca3.jpeg",
     organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSf1s30XprHuHop3DUsKL1s7JOX4ngQ8wHqIijrIDsza5jNLxQ/viewform"

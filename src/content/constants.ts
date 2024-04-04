@@ -302,6 +302,33 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSf0CawowgBhW4kHG-E5gY0du4Xlv-CnGOYP3PpA4O_hFt1txQ/viewform"
   },
   {
+    name: "OUTSPEAK",
+    day: "Day 1",
+    description: "An Open Mic Competition",
+    image: "ostreca.png",
+    organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScN-_90O3p3_jB2ay6VdpGDE7-u8gjcfoKmecETwzUGaSBSlg/viewform?usp=send_form"
+  },
+  {
+    name: "TABULA RASA",
+    day: "Day 1",
+    description: "A Prompt Based Writing Competition",
+    image: "ostreca2.png",
+    organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScnuUTrSUasBCAO4N5b_jojoqur30d5uEs_0LWxJM01OGDvXA/viewform?usp=send_form"
+  },
+  {
+    name: "NEVERLAND ACROSS, NARNIA DOWN",
+    day: "Day 3",
+    description: "Literature themed Crossword Challenge ",
+    image: "ostreca3.png",
+    organizedBy: "Ostraca -The Creative Writing Society, Hansraj  College ",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSf1s30XprHuHop3DUsKL1s7JOX4ngQ8wHqIijrIDsza5jNLxQ/viewform"
+  },
+  {
     name: "SIRJAN",
     day: "Day 1",
     description: "A Reel Making Competition",

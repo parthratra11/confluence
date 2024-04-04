@@ -37,7 +37,7 @@
 
   /* Animation for the Sponsors section */
   .sponsors-animation {
-    animation: sponsors 10s linear infinite;
+    animation: sponsors 12s linear infinite;
   }
 }
 
@@ -53,7 +53,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-125%);
   }
 }
 

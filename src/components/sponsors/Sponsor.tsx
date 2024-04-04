@@ -10,21 +10,22 @@ export default function Sponsor({
   image: string;
   link: string;
 }) {
-  const imgdim =
+
+  const imgDim =
     image === "pw.png" || image === "acer.png"
       ? image === "acer.png"
-        ? "h-27 w-full object-contain"
+        ? "w-52 object-contain"
         : "h-16 w-32 object-contain"
-      : "h-27 w-47 object-contain";
+      : "w-16 object-contain";
   return (
     <div>
-      <Link href={link}>
+      <Link href={link} className={"w-full min-h-24 flex flex-col justify-center items-center"}>
         <Image
           height={100}
           width={100}
           src={`/content/sponsors/${image}`}
           alt={name}
-          className={imgdim}
+          className={imgDim}
         />
       </Link>
       <span className="text-center font-medium text-tertiary-700">{name}</span>

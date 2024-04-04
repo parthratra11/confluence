@@ -44,12 +44,12 @@ function JumboText() {
   }, [textInView, api]);
 
   return (
-    <animated.div ref={textRef} style={spring} className="flex flex-col gap-6">
+    <animated.div ref={textRef} style={spring} className="flex flex-col gap-4">
       {theme.head.map((text, index) => {
         return (
           <div
             className={twMerge(
-              "text-6xl font-bold",
+              "text-5xl font-bold md:text-6xl",
               index % 2 === 0 ? "text-tertiary-700" : "text-slate-950",
               index === theme.head.length - 1
                 ? "confluence text-accent-700"
@@ -57,7 +57,7 @@ function JumboText() {
             )}
             key={index}
           >
-            {text + (index === theme.head.length - 1 ? " \u203C" : "\u275F")}
+            {text + (index === theme.head.length - 1 ? " \u203C" : ",")}
           </div>
         );
       })}
@@ -83,7 +83,7 @@ function Description() {
         ref={textRef}
         key={index}
         style={spring}
-        className="first-letter:confluence mt-20 text-justify text-base first-letter:text-lg first-letter:font-semibold first-letter:capitalize first-letter:text-accent-700 overflow-x-clip md:text-lg"
+        className="first-letter:confluence mt-14 text-justify text-base first-letter:text-lg first-letter:font-semibold first-letter:capitalize first-letter:text-accent-700 overflow-x-clip md:text-lg"
       >
         {sentence}
       </animated.p>

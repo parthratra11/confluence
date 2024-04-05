@@ -518,12 +518,17 @@ export const SPONSORS: SponsorsArrayType[] = [
       {
         name: "Trends",
         image: "trends-logo.png",
-        link: ""
+        link: "https://reliancetrends.com/"
       },
       {
         name: "Saregama",
         image: "Saregama-Logo.png",
         link: "https://www.saregama.com/"
+      },
+      {
+        name: "Instax FUJIFILM",
+        image: "instax.png",
+        link: "https://www.instax.in/collections/camera?utm_source=google&utm_medium=cpc&utm_campaign=Brand+%2B+DSA+Specific+-+10th+October&utm_id=18566672546&gad_source=1"
       }
     ]
   ]

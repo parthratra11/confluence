@@ -18,7 +18,7 @@ export default function Sponsors() {
         Credit <span className="text-accent-700">Roll </span>
         for the <span className="text-accent-700">Sponsors</span>
       </Heading>
-      <div className="mt-8 h-[80%] overflow-y-hidden">
+      <div className="mt-8 h-[100%] overflow-y-hidden">
         <div className="no-scrollbar sponsors-animation flex h-full flex-col gap-8 p-4 text-center">
           {sponsors.map((collection, index) => (
             <div key={index}>

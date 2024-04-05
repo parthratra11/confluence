@@ -511,6 +511,21 @@ export const SPONSORS: SponsorsArrayType[] = [
         link: "https://www.uboontufoundation.org/"
       }
     ]
+  ],
+  [
+    "Other Partners",
+    [
+      {
+        name: "Trends",
+        image: "trends-logo.png",
+        link: ""
+      },
+      {
+        name: "Saregama",
+        image: "Saregama-Logo.png",
+        link: "https://www.saregama.com/"
+      }
+    ]
   ]
 ];
 

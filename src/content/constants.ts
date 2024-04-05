@@ -183,6 +183,46 @@ export const EVENTS = [
       "https://docs.google.com/forms/d/e/1FAIpQLSctu8xV3CvrImNax8x5z6TbAe5Pa4HpnBErufJZgt5H5pY73A/viewform"
   },
   {
+    name: "LITFEST",
+    day: "Day 1",
+    description:
+      "BOOK & BOOK SALE",
+    image: "engsoc1.PNG",
+    organizedBy: "English Society, Hansraj College",
+    registrationLink:
+      "#"
+  },
+  {
+    name: "LITFEST",
+    day: "Day 2",
+    description:
+      "WHAT THE FLICK-A Short Film Marathon",
+    image: "engsoc2.JPG",
+    organizedBy: "English Society, Hansraj College",
+    registrationLink:
+      "#"
+  },
+  {
+    name: "LITFEST",
+    day: "Day 2",
+    description:
+      "Article Writing Competition ",
+    image: "engsoc3.PNG",
+    organizedBy: "English Society, Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScGx2-T-UQhVNfhde5eEcej-TH4hwThFEDaiPyJM6qkFeoxtg/viewform"
+  },
+  {
+    name: "DON QUIZOTE",
+    day: "Day 2",
+    description:
+      "The Pop-Lit Quiz ",
+    image: "litsoc.PNG",
+    organizedBy: "English Society, Hansraj College",
+    registrationLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfGZGiP2SxDi6Trt8oaSd3SaFTkOJLmz6tgDiuz0YA2Upht7Q/viewform"
+  },
+  {
     name: "NIRMIT",
     day: "Day 2",
     description:
@@ -345,6 +385,15 @@ export const EVENTS = [
     organizedBy: "Pixels - The Photography And Videography Society",
     registrationLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfPAHazAtTQMvQw6nTTWBUK9BtpMitZ7HjDH4N-UiLtdj6Z7g/viewform"
+  },
+  {
+    name: "IDENTITY 2024",
+    day: "Day 2",
+    description: "Mathematics Department Event",
+    image: "maths.png",
+    organizedBy: "Pi - Department of Mathematics",
+    registrationLink:
+      "#" 
   },
   {
     name: "RACHNOTSAV'24",

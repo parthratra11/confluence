@@ -1,22 +1,36 @@
-# Confluence '24
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Confluence is the name of the annual fest of Hansraj College, University of Delhi.
-This repo is for the website of the same.
+## Getting Started
 
-## Architecture
+First, run the development server:
 
-This is a simple static website, without many moving parts. It is generally considered a good practice to decouple content and the code. I initially was gravitating towards such a set-up using Keystone.js. I was hoping to expose a GraphQL API to serve the content, with Keystone.js also providing an admin dashboard for data entry and manipulation out-of-the-box. That set-up was turning out to be time-consuming, and, thus, we find ourselves in this rather unwanted situation of having our data and code being figuratively intertwined.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Still, for what it's worth, there is a directory-level division between the logic and the content, which you can appreciate for yourself by browsing the files.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Contributions
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-If you're looking at this, chances are you wish to make changes to the Confluence website. Also, it is perhaps likely that the nature of the changes that you wish to make is "content-oriented", that is to say, you wish to provide accurate content for the website. Here are the steps to do just that:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. Clone this repository (assuming you are a collaborator).
-2. Install dependencies using `npm install`. Make sure everything is working correctly by running `npm run dev` to run the development server locally.
-3. Make the desired changes locally by editing the `src/content/constants.ts` file appropriately.
-4. If some images are to be added, place them in the appropriate directory and then run `./minify-images.bash` from Git Bash (in the root directory of this project). This will minify the images, making the website faster. Do not skip the minification.
-5. Commit your changes in this format: `content: <message>`. If your commit message is not in this format, it will not be accepted by Husky. Sample commit message: `content: add information about artists`. (Bonus: Write messages in the imperative case, i.e. "add" instead of "added" in the aforementioned example. This is considered a good practice.)
-6. Push your changes back using `git push origin main` (you may be prompted to login). If the push is not successfull, pull changes into your local repo using `git pull origin main`, and then try pushing back again. (Resolve any merge conflicts if there are some, although that is not very likely for this project.)
-7. Relax and rejoice.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

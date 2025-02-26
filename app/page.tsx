@@ -96,7 +96,15 @@ export default function Home() {
 
       {/* Cartoonish Popup */}
       {showPopup && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+          onClick={(e) => {
+            // Only close if clicking the overlay, not the popup content
+            if (e.target === e.currentTarget) {
+              setShowPopup(false);
+            }
+          }}
+        >
           <div className="bg-[#1a0f2e] text-[#f9f9f9] p-8 rounded-2xl shadow-xl max-w-md mx-4 animate-bounce-in relative border-2 border-purple-500/30">
             <button
               onClick={() => setShowPopup(false)}
@@ -142,15 +150,7 @@ export default function Home() {
       <div
         className="absolute bottom-40 left-1/4 w-36 h-36 z-10 opacity-70"
         style={{ animationDelay: "-4s" }}
-      >
-        <Image
-          src="/galaxy1.png"
-          alt="Galaxy 1"
-          fill
-          className="object-contain animate-float"
-        />
-      </div>
-
+      ></div>
       {/* Logos in top left */}
       <div className="absolute top-4 left-4 flex gap-4 z-50">
         <a

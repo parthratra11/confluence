@@ -12,7 +12,7 @@ export default function FAQ() {
     <Section offset={5} containerClassName="bg-red-100" mdAlign="left">
       <div className="h-full md:m-auto md:max-w-[800px]">
         <Heading align="center" className="text-tertiary-700">
-          FAQ
+          FAQs
         </Heading>
         <div className="h-full overflow-y-auto p-4 py-8">
           <Questions />

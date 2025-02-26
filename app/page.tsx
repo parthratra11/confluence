@@ -160,7 +160,7 @@ export default function Home() {
           className="hover:scale-110 transition-transform"
         >
           <Image
-            src="/confluenceLogo.png"
+            src="/confluenceLogo2.png"
             width={50}
             height={50}
             alt="Confluence Logo"

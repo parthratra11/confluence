@@ -99,7 +99,6 @@ export default function Home() {
         <div
           className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
           onClick={(e) => {
-            // Only close if clicking the overlay, not the popup content
             if (e.target === e.currentTarget) {
               setShowPopup(false);
             }

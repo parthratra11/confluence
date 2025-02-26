@@ -19,7 +19,7 @@ export default function Home() {
     "Nice try! This was just a test to see if you'd fall for a pointless feature. You did.",
     "Nice try! This is just a test to see if you're paying attention.",
     "This button was last seen running away with the fest sponsorship money.",
-    "Nope. Not today. This button is on a 'no work' strike.",
+    "Nope. Not today. This button is on a 'No Work' strike.",
     "Your click has been forwarded to the most clueless fest volunteer.",
     "This button just ghosted you like your fest crush.",
     "Your click just got added to the 8-hour-long registration queue.",
@@ -67,7 +67,7 @@ export default function Home() {
     // Create shooting stars with longer intervals
     const interval = setInterval(() => {
       createShootingStar();
-    }, 3000 + Math.random() * 4000); // Changed from 1000 to 3000 and 1000 to 4000
+    }, 3000 + Math.random() * 4000);
 
     return () => clearInterval(interval);
   }, []);

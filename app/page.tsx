@@ -165,6 +165,13 @@ export default function Home() {
             height={50}
             alt="Confluence Logo"
             className="rounded-full"
+            priority
+            onError={(e) => {
+              // Fallback to alternative image if main one fails
+              const target = e.target as HTMLImageElement;
+              target.onerror = null; // Prevent infinite loop
+              target.src = "/confluence.png"; // Try alternative filename
+            }}
           />
         </a>
         <a

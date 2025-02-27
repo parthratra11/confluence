@@ -1,0 +1,38 @@
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.star-small {
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 2px #fff;
+}
+
+.star-medium {
+  width: 2px;
+  height: 2px;
+  box-shadow: 0 0 3px #fff;
+}
+
+.star-large {
+  width: 3px;
+  height: 3px;
+  box-shadow: 0 0 4px #fff;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 100px;
+  height: 1.5px;
+  background: linear-gradient(
+    -90deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  opacity: 0;
+  animation: shootingstar 3.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}

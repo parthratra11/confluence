@@ -250,11 +250,25 @@ export default function Home() {
         <Image src="/redBird.png" width={60} height={60} alt="Red Bird" />
       </motion.div>
 
+      {/* Added Galaxy1 between Red Bird and Big Bird */}
+      <div
+        className="absolute bottom-40 left-20 w-40 h-40 z-[5] opacity-60"
+        style={{ animationDelay: "-3s" }}
+      >
+        <Image
+          src="/galaxy1.png"
+          alt="Galaxy 1"
+          fill
+          className="object-contain animate-float"
+        />
+      </div>
+
+      {/* Move bigBird below text */}
       <motion.div
-        className="absolute top-1/3 right-20 z-10"
+        className="absolute bottom-20 left-1/3 z-[1]"
         animate={{
-          x: [0, -40, 0],
-          y: [0, 20, 0],
+          x: [0, 60, 0],
+          y: [0, -40, 0],
         }}
         transition={{
           repeat: Infinity,
@@ -262,7 +276,7 @@ export default function Home() {
           ease: "easeInOut",
         }}
       >
-        <Image src="/yellowBird.png" width={50} height={50} alt="Yellow Bird" />
+        <Image src="/bigBird.png" width={80} height={80} alt="Big Bird" />
       </motion.div>
 
       {/* Blue Birds Triangle Formation */}
@@ -327,22 +341,6 @@ export default function Home() {
         }}
       >
         <Image src="/blackBird.png" width={60} height={60} alt="Black Bird" />
-      </motion.div>
-
-      {/* Move bigBird below text */}
-      <motion.div
-        className="absolute bottom-20 left-1/3 z-[1]"
-        animate={{
-          x: [0, 60, 0],
-          y: [0, -40, 0],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 16,
-          ease: "easeInOut",
-        }}
-      >
-        <Image src="/bigBird.png" width={80} height={80} alt="Big Bird" />
       </motion.div>
 
       {/* Piggy1 - moved more to the right */}

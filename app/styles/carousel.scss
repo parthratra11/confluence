@@ -1,0 +1,135 @@
+#carousel {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  transform-origin: center center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.level-2 {
+    transform: translateX(-200%) scale(0.6);
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  &.level-1 {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  &.level0 {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    z-index: 5;
+  }
+
+  &.level1 {
+    transform: translateX(0%) scale(0.8);
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  &.level2 {
+    transform: translateX(100%) scale(0.6);
+    opacity: 0.4;
+    z-index: 1;
+  }
+}
+
+// Remove all the previous .level-2, .level-1, etc. classes and their measurements
+
+// Keep the navigation buttons styles
+.arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  line-height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+// Keep the transition classes
+.left-enter {
+  opacity: 0;
+  left: 0;
+  transform: translateY(20%);
+}
+
+.left-enter.left-enter-active {
+  opacity: 0.4;
+  left: 10%;
+}
+
+.left-leave {
+  opacity: 0.4;
+  left: 70%;
+}
+
+.left-leave.left-leave-active {
+  opacity: 0;
+  left: 80%;
+}
+
+.right-enter {
+  opacity: 0;
+  left: 80%;
+}
+
+.right-enter.right-enter-active {
+  opacity: 0.4;
+  left: 70%;
+}
+
+.right-leave {
+  opacity: 0.4;
+  left: 10%;
+}
+
+.right-leave.right-leave-active {
+  opacity: 0;
+  left: 0;
+}

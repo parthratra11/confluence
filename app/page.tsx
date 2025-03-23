@@ -48,7 +48,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <Clock className="w-10 h-10 text-yellow-400" />
+        <Clock className="w-6 h-6 md:w-10 md:h-10 text-yellow-400" />
         <span>28-30th March</span>
       </motion.div>
 

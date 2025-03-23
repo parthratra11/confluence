@@ -43,13 +43,13 @@ export default function Home() {
 
       {/* Countdown */}
       <motion.div
-        className="mt-6 flex items-center gap-2 text-xl md:text-2xl z-40 text-[#f9f9f9]"
+        className="mt-6 flex items-center gap-2 text-3xl md:text-6xl z-40 text-[#f9f9f9]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        <Clock className="w-6 h-6 text-yellow-400" />
-        <span>Coming Soon...</span>
+        <Clock className="w-10 h-10 text-yellow-400" />
+        <span>28-30th March</span>
       </motion.div>
 
       {/* Instagram Call-to-action */}

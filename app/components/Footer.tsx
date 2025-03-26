@@ -3,6 +3,13 @@ import React from "react";
 import { RiInstagramLine, RiMailLine } from "react-icons/ri";
 
 const Footer: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <footer
@@ -24,7 +31,12 @@ const Footer: React.FC = () => {
                 className="rounded-full p-4"
               />
             </div>
-            <p>Confluence 2025</p>
+            <p className="text-2xl md:text-4xl font-bold flex items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Confluence 2025
+            </p>
+            <p className="text-sm md:text-lg flex items-center justify-center text-gray-200">
+              Annual Fest of Hansraj College
+            </p>
           </div>
 
           {/* Useful Links Section */}
@@ -35,38 +47,49 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="relative group">
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="relative group"
+                >
                   <span className="relative pb-2">Home</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#about" className="relative group">
-                  <span className="relative pb-2">About</span>
+                <button
+                  onClick={() => scrollToSection("artists")}
+                  className="relative group"
+                >
+                  <span className="relative pb-2">Artists</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#themes" className="relative group">
-                  <span className="relative pb-2">Theme</span>
-                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#timeline" className="relative group">
+                <button
+                  onClick={() => scrollToSection("schedule")}
+                  className="relative group"
+                >
                   <span className="relative pb-2">Schedule</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="https://docs.google.com/document/d/1be5pkCyeRR_UDj7JGUkNt6_CkJ3h7-i9m4Ye_EaPI_A/edit?usp=sharing"
+                <button
+                  onClick={() => scrollToSection("events")}
                   className="relative group"
-                  target="_blank"
                 >
-                  <span className="relative pb-2">Guidelines</span>
+                  <span className="relative pb-2">Events</span>
                   <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("sponsors")}
+                  className="relative group"
+                >
+                  <span className="relative pb-2">Sponsors</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-cyan-500 transition-all duration-300 group-hover:w-full"></span>
+                </button>
               </li>
             </ul>
             <div className="flex space-x-2 mt-6">

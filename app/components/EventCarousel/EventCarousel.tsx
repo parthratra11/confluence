@@ -85,12 +85,12 @@ const EventCarousel = ({
   return (
     <div className="relative px-12">
       {/* Add play/pause button */}
-      <button
+      {/* <button
         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
         className="absolute top-4 right-4 z-50 px-4 py-2 bg-purple-600/80 rounded-lg hover:bg-purple-600 transition-colors"
       >
         {isAutoPlaying ? "Pause" : "Play"}
-      </button>
+      </button> */}
 
       {/* Day Selection */}
       <div className="flex justify-center gap-4 mb-8">
@@ -180,35 +180,22 @@ const EventCarousel = ({
 
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">
-                    {event.name ? event.name : "-"}
+                    {event.name || "-"}
                   </h3>
-                  <p className="text-purple-400 mb-4">{event.society}</p>
+                  <p className="text-purple-400 mb-4">{event.society || "-"}</p>
 
                   <div className="flex items-center gap-2 mb-2">
                     <Clock className="w-4 h-4" />
-                    {event.date && (
-                      <span>{`${event.date}${
-                        event.time ? ` | ${event.time}` : ""
-                      }`}</span>
-                    )}
+                    <span>
+                      {event.date || "-"}
+                      {event.time ? ` | ${event.time}` : ""}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 mb-4">
                     <MapPin className="w-4 h-4" />
-                    <span>{event.venue}</span>
+                    <span>{event.venue || "-"}</span>
                   </div>
-
-                  {/* {event.igLink && (
-                    <a
-                      href={event.igLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg transition-colors"
-                    >
-                      <Instagram className="w-4 h-4" />
-                      <span>Follow Society</span>
-                    </a>
-                  )} */}
                 </div>
               </div>
             </motion.div>

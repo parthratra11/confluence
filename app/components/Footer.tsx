@@ -19,22 +19,22 @@ const Footer: React.FC = () => {
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Section */}
           <div>
-            <div className="grid gap-1 mb-4 grid-cols-[1fr_1fr]">
+            <div className="grid gap-1 mb-4 grid-cols-[1fr_1fr_1.5fr] md:grid-cols-[1fr_1fr_0.7fr]">
               <img
                 src="/hrcLogo.jpeg"
                 alt="Hansraj Logo"
-                className="rounded-full p-4"
+                className="rounded-full p-2"
               />
               <img
                 src="/confluenceLogo.png"
                 alt="Confluence Logo"
-                className="rounded-full p-4"
+                className="rounded-full p-2"
               />
             </div>
-            <p className="text-2xl md:text-4xl font-bold flex items-center justify-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <p className="text-3xl md:text-5xl font-bold flex items-center md:ml-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Confluence 2025
             </p>
-            <p className="text-sm md:text-lg flex items-center justify-center text-gray-200">
+            <p className="text-sm md:text-lg flex items-center md:ml-4 text-gray-200">
               Annual Fest of Hansraj College
             </p>
           </div>
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
             </ul>
             <div className="flex space-x-2 mt-6">
               <a
-                href="mailto:ordinateur.hrc.du@gmail.com"
+                href="mailto:confluence24.hrc@gmail.com"
                 aria-label="Mail"
                 className="bg-white bg-opacity-10 rounded-full p-2  text-white hover:text-cyan-400 hover:-translate-y-2 transition-all duration-200"
               >

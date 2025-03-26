@@ -83,20 +83,12 @@ const EventCarousel = ({
   }, [selectedDay]);
 
   return (
-    <div className="relative px-12">
-      {/* Add play/pause button */}
-      {/* <button
-        onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-        className="absolute top-4 right-4 z-50 px-4 py-2 bg-purple-600/80 rounded-lg hover:bg-purple-600 transition-colors"
-      >
-        {isAutoPlaying ? "Pause" : "Play"}
-      </button> */}
-
+    <div className="relative px-4 sm:px-12 max-w-7xl 2xl:max-w-[1400px] mx-auto">
       {/* Day Selection */}
-      <div className="flex justify-center gap-4 mb-8">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8">
         <button
           onClick={() => onDayChange("all")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-lg ${
             selectedDay === "all" ? "bg-purple-600" : "bg-gray-700"
           }`}
         >
@@ -104,7 +96,7 @@ const EventCarousel = ({
         </button>
         <button
           onClick={() => onDayChange("28 March")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-lg ${
             selectedDay === "28 March" ? "bg-purple-600" : "bg-gray-700"
           }`}
         >
@@ -112,7 +104,7 @@ const EventCarousel = ({
         </button>
         <button
           onClick={() => onDayChange("29 March")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-lg ${
             selectedDay === "29 March" ? "bg-purple-600" : "bg-gray-700"
           }`}
         >
@@ -120,7 +112,7 @@ const EventCarousel = ({
         </button>
         <button
           onClick={() => onDayChange("30 March")}
-          className={`px-4 py-2 rounded-lg ${
+          className={`px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-lg ${
             selectedDay === "30 March" ? "bg-purple-600" : "bg-gray-700"
           }`}
         >
@@ -131,19 +123,19 @@ const EventCarousel = ({
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-50 bg-purple-600/80 p-2 rounded-full hover:bg-purple-600 transition-colors"
+        className="absolute left-0 sm:left-2 top-1/2 -translate-y-1/2 z-50 bg-purple-600/80 p-1 sm:p-2 rounded-full hover:bg-purple-600 transition-colors"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-50 bg-purple-600/80 p-2 rounded-full hover:bg-purple-600 transition-colors"
+        className="absolute right-0 sm:right-2 top-1/2 -translate-y-1/2 z-50 bg-purple-600/80 p-1 sm:p-2 rounded-full hover:bg-purple-600 transition-colors"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6" />
       </button>
 
       {/* Event Cards */}
-      <div className="overflow-hidden relative h-[600px]">
+      <div className="overflow-hidden relative h-[400px] sm:h-[600px]">
         <div className="absolute w-full h-full flex items-center justify-center">
           {getVisibleEvents().map(({ event, offset }, index) => (
             <motion.div
@@ -159,7 +151,10 @@ const EventCarousel = ({
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               style={{
                 filter: Math.abs(offset) <= 1 ? "none" : "blur(4px)",
-                width: "320px", // Fixed width for 4:5 aspect ratio
+                width: "280px", // Smaller width for mobile
+                "@media (min-width: 640px)": {
+                  width: "320px", // Original width for larger screens
+                },
               }}
             >
               <div className="bg-gray-900 rounded-xl mx-2 overflow-hidden shadow-xl">

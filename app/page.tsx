@@ -132,7 +132,7 @@ export default function Home() {
       {/* Hero Section */}
       <motion.div
         id="home"
-        className="container mx-auto px-4 min-h-screen flex flex-col justify-center items-center z-40 relative"
+        className="container mx-auto px-4 min-h-screen flex flex-col justify-center items-center z-40 relative py-20 2xl:py-32"
       >
         {/* Character components with their own overlay */}
         <div className="absolute inset-0 w-full h-full">
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
 
         <motion.div
-          className="z-50 text-7xl mt-8 md:text-9xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+          className="z-50 text-5xl sm:text-7xl 2xl:text-[120px] mt-8 font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
@@ -154,7 +154,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="z-50 mt-6 text-2xl md:text-4xl text-center text-[#f9f9f9]"
+          className="z-50 mt-4 sm:mt-6 text-xl sm:text-2xl 2xl:text-5xl text-center text-[#f9f9f9]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 2 }}
@@ -163,12 +163,12 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="z-50 mt-4 flex items-center gap-3 text-2xl md:text-3xl text-[#f9f9f9]"
+          className="z-50 mt-4 flex items-center gap-2 sm:gap-3 text-xl sm:text-2xl 2xl:text-4xl text-[#f9f9f9]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          <Calendar className="w-8 h-8 text-yellow-400" />
+          <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-400" />
           <span>28th - 30th March 2025</span>
         </motion.div>
 
@@ -208,11 +208,14 @@ export default function Home() {
       </motion.div>
 
       {/* Artist Reveal Section */}
-      <motion.div id="artists" className="container mx-auto px-4 py-20 z-40">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+      <motion.div
+        id="artists"
+        className="container mx-auto px-4 py-12 sm:py-20 z-40"
+      >
+        <h2 className="text-3xl sm:text-4xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-16">
           Artist Lineup
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 max-w-7xl 2xl:max-w-[1400px] mx-auto">
           {[1, 2, 3].map((day) => (
             <div
               key={day}
@@ -259,12 +262,15 @@ export default function Home() {
       </motion.div>
 
       {/* Schedule Section */}
-      <motion.div id="schedule" className="container mx-auto px-4 py-20 z-40">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+      <motion.div
+        id="schedule"
+        className="container mx-auto px-4 py-12 sm:py-20 z-40"
+      >
+        <h2 className="text-3xl sm:text-4xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-16">
           Schedule
         </h2>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl 2xl:max-w-[1400px] mx-auto">
           <Tab.Group>
             <Tab.List className="flex space-x-4 justify-center mb-8">
               {[1, 2, 3].map((day) => (
@@ -285,118 +291,57 @@ export default function Home() {
             <Tab.Panels>
               {[1, 2, 3].map((day) => (
                 <Tab.Panel key={day}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {/* Morning Events Column */}
-                    <div className="space-y-4">
-                      {scheduleData[day]
-                        .slice(0, Math.ceil(scheduleData[day].length / 2))
-                        .map((event, index) => (
-                          <motion.div
-                            key={`morning-${index}`}
-                            className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                          >
-                            <div className="flex flex-col gap-2">
-                              {event.time ? (
-                                <div className="flex items-center gap-2">
-                                  <Clock className="w-4 h-4 text-purple-400" />
-                                  <span className="text-purple-400">
-                                    {event.time}
-                                  </span>
-                                </div>
-                              ) : (
-                                <div className="flex items-center gap-2">
-                                  <Clock className="w-4 h-4 text-purple-400" />
-                                  <span className="text-purple-400">-</span>
-                                </div>
-                              )}
-                              <h3 className="text-xl font-bold">
-                                {event.name || "-"}
-                              </h3>
-                              <div className="flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-gray-400" />
-                                <span className="text-gray-300">
-                                  {event.venue || "-"}
-                                </span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <p className="text-gray-400">
-                                  By {event.society || "-"}
-                                </p>
-                                {event.igLink && (
-                                  <a
-                                    href={event.igLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
-                                  >
-                                    <span>View Details</span>
-                                    <ExternalLink className="w-3 h-3" />
-                                  </a>
-                                )}
-                              </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 2xl:gap-6">
+                    {scheduleData[day].map((event, index) => (
+                      <motion.div
+                        key={index}
+                        className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                      >
+                        <div className="flex flex-col gap-2">
+                          {event.time ? (
+                            <div className="flex items-center gap-2">
+                              <Clock className="w-4 h-4 text-purple-400" />
+                              <span className="text-purple-400">
+                                {event.time}
+                              </span>
                             </div>
-                          </motion.div>
-                        ))}
-                    </div>
-
-                    {/* Afternoon/Evening Events Column */}
-                    <div className="space-y-4">
-                      {scheduleData[day]
-                        .slice(Math.ceil(scheduleData[day].length / 2))
-                        .map((event, index) => (
-                          <motion.div
-                            key={`afternoon-${index}`}
-                            className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: (index + 5) * 0.1 }}
-                          >
-                            <div className="flex flex-col gap-2">
-                              {event.time ? (
-                                <div className="flex items-center gap-2">
-                                  <Clock className="w-4 h-4 text-purple-400" />
-                                  <span className="text-purple-400">
-                                    {event.time}
-                                  </span>
-                                </div>
-                              ) : (
-                                <div className="flex items-center gap-2">
-                                  <Clock className="w-4 h-4 text-purple-400" />
-                                  <span className="text-purple-400">-</span>
-                                </div>
-                              )}
-                              <h3 className="text-xl font-bold">
-                                {event.name || "-"}
-                              </h3>
-                              <div className="flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-gray-400" />
-                                <span className="text-gray-300">
-                                  {event.venue || "-"}
-                                </span>
-                              </div>
-                              <div className="flex justify-between items-center">
-                                <p className="text-gray-400">
-                                  By {event.society || "-"}
-                                </p>
-                                {event.igLink && (
-                                  <a
-                                    href={event.igLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
-                                  >
-                                    <span>View Details</span>
-                                    <ExternalLink className="w-3 h-3" />
-                                  </a>
-                                )}
-                              </div>
+                          ) : (
+                            <div className="flex items-center gap-2">
+                              <Clock className="w-4 h-4 text-purple-400" />
+                              <span className="text-purple-400">-</span>
                             </div>
-                          </motion.div>
-                        ))}
-                    </div>
+                          )}
+                          <h3 className="text-xl font-bold">
+                            {event.name || "-"}
+                          </h3>
+                          <div className="flex items-center gap-2">
+                            <MapPin className="w-4 h-4 text-gray-400" />
+                            <span className="text-gray-300">
+                              {event.venue || "-"}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <p className="text-gray-400">
+                              By {event.society || "-"}
+                            </p>
+                            {event.igLink && (
+                              <a
+                                href={event.igLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
+                              >
+                                <span>View Details</span>
+                                <ExternalLink className="w-3 h-3" />
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
                   </div>
                 </Tab.Panel>
               ))}
@@ -408,9 +353,9 @@ export default function Home() {
       {/* Event Carousel Section */}
       <motion.section
         id="events"
-        className="min-h-screen w-full py-20 relative z-40"
+        className="min-h-screen w-full py-12 sm:py-20 relative z-40"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <h2 className="text-3xl sm:text-4xl 2xl:text-6xl font-bold text-center mb-8 sm:mb-16">
           Featured Events
         </h2>
         <EventCarousel

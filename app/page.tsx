@@ -145,7 +145,7 @@ export default function Home() {
         </div>
 
         <motion.div
-          className="z-50 text-5xl sm:text-7xl 2xl:text-[120px] mt-8 font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+          className="z-50 text-5xl sm:text-8xl 2xl:text-[120px] mt-8 font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
@@ -154,7 +154,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="z-50 mt-4 sm:mt-6 text-xl sm:text-2xl 2xl:text-5xl text-center text-[#f9f9f9]"
+          className="z-50 mt-4 sm:mt-6 text-xl sm:text-3xl 2xl:text-5xl text-center text-[#f9f9f9]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 2 }}
@@ -163,7 +163,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="z-50 mt-4 flex items-center gap-2 sm:gap-3 text-xl sm:text-2xl 2xl:text-4xl text-[#f9f9f9]"
+          className="z-50 mt-4 flex items-center gap-2 sm:gap-3 text-xl sm:text-3xl 2xl:text-4xl text-[#f9f9f9]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}

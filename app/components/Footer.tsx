@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                 className="rounded-full p-2"
               />
               <img
-                src="/confluenceLogo.png"
+                src="/confluenceLogo2.png"
                 alt="Confluence Logo"
                 className="rounded-full p-2"
               />

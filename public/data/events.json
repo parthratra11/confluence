@@ -1,0 +1,497 @@
+{
+  "events": [
+    {
+      "society": "Abhivyakti",
+      "igLink": "https://instagram.com/abhivyakti.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Nrityarati",
+          "venue": "Lib Audi",
+          "date": "29 March",
+          "time": "2 pm-4:30pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Abhivyakti",
+      "igLink": "https://instagram.com/abhivyakti.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Laasya",
+          "venue": "Stage",
+          "date": "29 March",
+          "time": "10am-1 pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Advaita",
+      "igLink": "https://instagram.com/advaita.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "1 event",
+          "venue": "Seminar Room",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Culinary Arts Society",
+      "igLink": "https://instagram.com/culinaryarts.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Bake Sale",
+          "venue": "LP",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "English Society",
+      "igLink": "https://instagram.com/englishsociety.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "3 events",
+          "venue": "Old Seminar",
+          "duration": "Whole Day",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "GAEE",
+      "igLink": "https://instagram.com/gaee.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Lib Audi",
+          "date": "29 March",
+          "time": "1pm - 3pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Gender Equality Cell",
+      "igLink": "https://instagram.com/genderequality.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Seminar Room",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Girl Up DU",
+      "igLink": "https://instagram.com/girlupdu.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Seminar Room",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Green Warriors Club",
+      "igLink": "https://instagram.com/greenwarriors.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Seminar Room",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Kalakriti",
+      "igLink": "https://instagram.com/kalakriti.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Sangam",
+          "venue": "C Block Area",
+          "date": "28 March",
+          "duration": "Whole Day",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Nirmit",
+          "venue": "Big Classroom in C Block",
+          "date": "29 March",
+          "time": "10 am-2 pm",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Mirari",
+          "venue": "Big Classroom in C Block",
+          "date": "30 March",
+          "time": "10 am-1 pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Kavyakriti",
+      "igLink": "https://instagram.com/kavyakriti.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Taltarang",
+          "venues": ["Lib Audi", "Amphi", "Lib Audi"],
+          "dates": ["29 March", "29 March", "30 March"],
+          "times": ["9am-12pm", "1pm-3pm", "9am-1 pm"],
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Kavyanjali",
+      "igLink": "https://instagram.com/kavyanjali.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Poetry Battle",
+          "venue": "Amphi",
+          "date": "29 March",
+          "time": "10 am - 1 pm",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Slam Poetry",
+          "venue": "Lib Audi",
+          "date": "30 March",
+          "time": "11am - 2 pm",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Mirari",
+          "venue": "Big Classroom in C Block",
+          "date": "30 March",
+          "time": "10 am - 1 pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Nishtha",
+      "igLink": "https://instagram.com/nishtha.hansraj",
+      "image": "/temp.jpg",
+      "events": []
+    },
+    {
+      "society": "Oorja",
+      "igLink": "https://instagram.com/oorja.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Mitti Cafe",
+          "date": "30 March",
+          "time": "11-5 PM",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Ostraca",
+      "igLink": "https://instagram.com/ostraca.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Open Mic",
+          "venue": "Amphi",
+          "date": "Day 1",
+          "time": "10-2 PM",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Puzzle",
+          "venue": "Old Seminar",
+          "date": "Day 1",
+          "time": "2-3:30 PM",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Creative Writing",
+          "venue": "Old Seminar",
+          "date": "Day 2",
+          "time": "2 PM Onwards",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Pixels",
+      "igLink": "https://instagram.com/pixels.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Plickture",
+          "venue": "C Block Area",
+          "duration": "All 3 Days, Whole Day",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Rasayanatva",
+      "igLink": "https://instagram.com/rasayanatva.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Chemotsav",
+          "venue": "Chemistry Department Room",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Chemotsav (Day 1)",
+          "venue": "Lib Audi",
+          "date": "29 March",
+          "duration": "4 Hours",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "SPIC MACAY",
+      "igLink": "https://instagram.com/spicmacay.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Not Decided",
+          "venue": "Amphi",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Swaranajali",
+      "igLink": "https://instagram.com/swaranajali.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Rachnotsav 2",
+          "venue": "2 Big + 5 Normal Classrooms",
+          "date": "29 March",
+          "duration": "Whole Day",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Rachnotsav (Day 3)",
+          "venue": "2 Big + 5 Normal Classrooms",
+          "date": "30 March",
+          "duration": "Whole Day",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Cancelled",
+          "venue": "Stage",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "UDAAN",
+      "igLink": "https://instagram.com/udaan.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Pravah",
+          "venue": "Lib Audi",
+          "date": "28 March",
+          "time": "12pm-4pm",
+          "image": "/temp.jpg"
+        },
+        {
+          "name": "Manmarziya",
+          "venue": "Amphi",
+          "date": "30 March",
+          "time": "11am-3pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Vintago",
+      "igLink": "https://instagram.com/vintago.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Allure",
+          "venue": "Stage",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "NE Cell",
+      "igLink": "https://instagram.com/necell.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Lengkhawm",
+          "venue": "Lib Audi",
+          "date": "28 March",
+          "time": "12pm-4pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Artist Band",
+      "igLink": "https://instagram.com/artistband.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Stage",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Sufi",
+      "igLink": "https://instagram.com/sufi.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Stage",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Dance Competition",
+      "igLink": "https://instagram.com/dancecompetition.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Stage",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Kavi Sammelan",
+      "igLink": "https://instagram.com/kavisammelan.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Lib Audi",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "HRC Hipop",
+      "igLink": "https://instagram.com/hrchipop.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Stage",
+          "duration": "45 minutes",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Botany Department (Botanique)",
+      "igLink": "https://instagram.com/botanydepartment.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "1 Event",
+          "venue": "A1 Classroom and Botany Department",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Statecraft",
+      "igLink": "https://instagram.com/statecraft.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "MUN (Conference)",
+          "venue": "C Block 4 Rooms 2nd Floor",
+          "date": "28-29 March",
+          "duration": "Full Day",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "DRAMSOC",
+      "igLink": "https://instagram.com/dramsoc.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Rangmanchita",
+          "venue": "Lib Audi",
+          "date": "29 March",
+          "duration": "Full Day",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Haritma",
+      "igLink": "https://instagram.com/haritma.hansraj",
+      "image": "/temp.jpg",
+      "events": []
+    },
+    {
+      "society": "Yoga Society",
+      "igLink": "https://instagram.com/yogasociety.hansraj",
+      "image": "/temp.jpg",
+      "events": []
+    },
+    {
+      "society": "EOC+EU",
+      "igLink": "https://instagram.com/eoc.eu.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Pahal'25",
+          "venue": "Old Seminar",
+          "date": "28 March",
+          "time": "12pm-4pm",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Transposon",
+      "igLink": "https://instagram.com/transposon.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "3 Botany Labs, A1 A2",
+          "date": "28 March",
+          "time": "10-2:30",
+          "image": "/temp.jpg"
+        }
+      ]
+    },
+    {
+      "society": "Literary Society",
+      "igLink": "https://instagram.com/literarysociety.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "venue": "Amphi",
+          "date": "29 March",
+          "time": "12-3",
+          "image": "/temp.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "brands": [
+    {
+      "name": "ACER",
+      "image": "/sponsors/acer.png"
+    },
+    {
+      "name": "MARS COSMETICS",
+      "image": "/sponsors/marsCosmetics.png"
+    },
+    {
+      "name": "KRAFTON",
+      "image": "/sponsors/krafton.png"
+    },
+    {
+      "name": "IFFCO",
+      "image": "/sponsors/iffco.png"
+    },
+    {
+      "name": "FARMLEY",
+      "image": "/sponsors/farmley.png"
+    },
+    {
+      "name": "HILARY RHODA",
+      "image": "/sponsors/hilaryRhoda.png"
+    },
+    {
+      "name": "NESTLE",
+      "image": "/sponsors/nestle.png"
+    },
+    {
+      "name": "HERODY",
+      "image": "/sponsors/herody.jpg"
+    }
+  ]
+}

@@ -14,351 +14,102 @@ import { Carousel } from "./components/Carousel/Carousel";
 import EventCarousel from "./components/EventCarousel/EventCarousel";
 import { Tab } from "@headlessui/react";
 import { ExternalLink } from "lucide-react";
+import eventsData from "../public/data/events.json";
+import Footer from "./components/Footer";
+import Sponsors from "./components/Sponsors";
 
 export default function Home() {
   const [hoveredArtist, setHoveredArtist] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [selectedDay, setSelectedDay] = useState(1);
+  const [selectedDay, setSelectedDay] = useState("all");
 
-  const events = [
-    {
-      id: 1,
-      title: "Battle of Bands",
-      society: "Music Society",
-      date: "28th March",
-      time: "10:00 AM",
-      venue: "OAT",
-      image: "/temp.jpg",
-    },
-    {
-      id: 2,
-      title: "Street Play Finals",
-      society: "Dramatics Society",
-      date: "28th March",
-      time: "2:00 PM",
-      venue: "Sports Ground",
-      image: "/temp.jpg",
-    },
-    {
-      id: 3,
-      title: "EDM Night",
-      society: "Cultural Council",
-      date: "29th March",
-      time: "6:00 PM",
-      venue: "Sports Ground",
-      image: "/temp.jpg",
-    },
-    {
-      id: 4,
-      title: "Fashion Show",
-      society: "Fashion Society",
-      date: "30th March",
-      time: "5:00 PM",
-      venue: "Main Stage",
-      image: "/temp.jpg",
-    },
-    {
-      id: 5,
-      title: "Dance Competition",
-      society: "Dance Society",
-      date: "29th March",
-      time: "3:00 PM",
-      venue: "Main Auditorium",
-      image: "/temp.jpg",
-    },
-    {
-      id: 6,
-      title: "Poetry Slam",
-      society: "Literary Society",
-      date: "28th March",
-      time: "1:00 PM",
-      venue: "Seminar Hall",
-      image: "/temp.jpg",
-    },
-    {
-      id: 7,
-      title: "Art Exhibition",
-      society: "Fine Arts Society",
-      date: "29th March",
-      time: "11:00 AM",
-      venue: "Art Gallery",
-      image: "/temp.jpg",
-    },
-    {
-      id: 8,
-      title: "Stand-up Comedy",
-      society: "Drama Society",
-      date: "30th March",
-      time: "4:00 PM",
-      venue: "OAT",
-      image: "/temp.jpg",
-    },
-    {
-      id: 9,
-      title: "DJ War",
-      society: "Music Society",
-      date: "30th March",
-      time: "7:00 PM",
-      venue: "Sports Ground",
-      image: "/temp.jpg",
-    },
-    {
-      id: 10,
-      title: "Star Night",
-      society: "Cultural Council",
-      date: "30th March",
-      time: "8:00 PM",
-      venue: "Sports Ground",
-      image: "/temp.jpg",
-    },
-  ];
+  // Convert JSON events to the format needed by EventCarousel
+  const carouselEvents = eventsData.events.flatMap((society) =>
+    society.events.map((event) => ({
+      ...event,
+      society: society.society,
+      igLink: society.igLink, // Add this to your JSON file
+    }))
+  );
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Convert events data for schedule display
   const scheduleData = {
-    1: [
-      // Morning Events Column
-      {
-        time: "9:00 AM",
-        name: "Opening Ceremony",
-        venue: "College Auditorium",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-      {
-        time: "10:00 AM",
-        name: "Battle of Bands",
-        venue: "Open Air Theatre",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "11:00 AM",
-        name: "Street Play",
-        venue: "Sports Ground",
-        society: "Theatre Society",
-        igLink: "https://instagram.com/theatre_society",
-      },
-      {
-        time: "11:30 AM",
-        name: "Poetry Slam",
-        venue: "Seminar Hall",
-        society: "Literary Society",
-        igLink: "https://instagram.com/lit_society",
-      },
-      {
-        time: "12:00 PM",
-        name: "Art Exhibition",
-        venue: "Art Gallery",
-        society: "Fine Arts Society",
-        igLink: "https://instagram.com/fine_arts",
-      },
-      // Afternoon/Evening Events Column
-      {
-        time: "2:00 PM",
-        name: "Dance Competition",
-        venue: "Main Stage",
-        society: "Dance Society",
-        igLink: "https://instagram.com/dance_society",
-      },
-      {
-        time: "3:30 PM",
-        name: "Music Performance",
-        venue: "Auditorium",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "4:00 PM",
-        name: "Fashion Show",
-        venue: "Main Stage",
-        society: "Fashion Society",
-        igLink: "https://instagram.com/fashion_society",
-      },
-      {
-        time: "5:00 PM",
-        name: "Stand-up Comedy",
-        venue: "Seminar Hall",
-        society: "Drama Society",
-        igLink: "https://instagram.com/drama_society",
-      },
-      {
-        time: "6:00 PM",
-        name: "DJ Night",
-        venue: "Sports Ground",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-    ],
-    2: [
-      // Morning Events Column
-      {
-        time: "9:00 AM",
-        name: "Opening Ceremony",
-        venue: "College Auditorium",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-      {
-        time: "10:00 AM",
-        name: "Battle of Bands",
-        venue: "Open Air Theatre",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "11:00 AM",
-        name: "Street Play",
-        venue: "Sports Ground",
-        society: "Theatre Society",
-        igLink: "https://instagram.com/theatre_society",
-      },
-      {
-        time: "11:30 AM",
-        name: "Poetry Slam",
-        venue: "Seminar Hall",
-        society: "Literary Society",
-        igLink: "https://instagram.com/lit_society",
-      },
-      {
-        time: "12:00 PM",
-        name: "Art Exhibition",
-        venue: "Art Gallery",
-        society: "Fine Arts Society",
-        igLink: "https://instagram.com/fine_arts",
-      },
-      // Afternoon/Evening Events Column
-      {
-        time: "2:00 PM",
-        name: "Dance Competition",
-        venue: "Main Stage",
-        society: "Dance Society",
-        igLink: "https://instagram.com/dance_society",
-      },
-      {
-        time: "3:30 PM",
-        name: "Music Performance",
-        venue: "Auditorium",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "4:00 PM",
-        name: "Fashion Show",
-        venue: "Main Stage",
-        society: "Fashion Society",
-        igLink: "https://instagram.com/fashion_society",
-      },
-      {
-        time: "5:00 PM",
-        name: "Stand-up Comedy",
-        venue: "Seminar Hall",
-        society: "Drama Society",
-        igLink: "https://instagram.com/drama_society",
-      },
-      {
-        time: "6:00 PM",
-        name: "DJ Night",
-        venue: "Sports Ground",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-    ],
-    3: [
-      // Morning Events Column
-      {
-        time: "9:00 AM",
-        name: "Opening Ceremony",
-        venue: "College Auditorium",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-      {
-        time: "10:00 AM",
-        name: "Battle of Bands",
-        venue: "Open Air Theatre",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "11:00 AM",
-        name: "Street Play",
-        venue: "Sports Ground",
-        society: "Theatre Society",
-        igLink: "https://instagram.com/theatre_society",
-      },
-      {
-        time: "11:30 AM",
-        name: "Poetry Slam",
-        venue: "Seminar Hall",
-        society: "Literary Society",
-        igLink: "https://instagram.com/lit_society",
-      },
-      {
-        time: "12:00 PM",
-        name: "Art Exhibition",
-        venue: "Art Gallery",
-        society: "Fine Arts Society",
-        igLink: "https://instagram.com/fine_arts",
-      },
-      // Afternoon/Evening Events Column
-      {
-        time: "2:00 PM",
-        name: "Dance Competition",
-        venue: "Main Stage",
-        society: "Dance Society",
-        igLink: "https://instagram.com/dance_society",
-      },
-      {
-        time: "3:30 PM",
-        name: "Music Performance",
-        venue: "Auditorium",
-        society: "Music Society",
-        igLink: "https://instagram.com/music_society",
-      },
-      {
-        time: "4:00 PM",
-        name: "Fashion Show",
-        venue: "Main Stage",
-        society: "Fashion Society",
-        igLink: "https://instagram.com/fashion_society",
-      },
-      {
-        time: "5:00 PM",
-        name: "Stand-up Comedy",
-        venue: "Seminar Hall",
-        society: "Drama Society",
-        igLink: "https://instagram.com/drama_society",
-      },
-      {
-        time: "6:00 PM",
-        name: "DJ Night",
-        venue: "Sports Ground",
-        society: "Cultural Council",
-        igLink: "https://instagram.com/cultural_council",
-      },
-    ],
+    1: eventsData.events
+      .flatMap((society) =>
+        society.events.map((event) => ({
+          ...event,
+          society: society.society,
+          igLink: society.igLink,
+          date: event.date || "",
+          time: event.time || "",
+        }))
+      )
+      .filter((event) => event.date.includes("28 March"))
+      .sort((a, b) => {
+        // Sort by time if available
+        const timeA = a.time?.split("-")[0] || "";
+        const timeB = b.time?.split("-")[0] || "";
+        return timeA.localeCompare(timeB);
+      }),
+    2: eventsData.events
+      .flatMap((society) =>
+        society.events.map((event) => ({
+          ...event,
+          society: society.society,
+          igLink: society.igLink,
+          date: event.date || "",
+          time: event.time || "",
+        }))
+      )
+      .filter((event) => event.date.includes("29 March"))
+      .sort((a, b) => {
+        const timeA = a.time?.split("-")[0] || "";
+        const timeB = b.time?.split("-")[0] || "";
+        return timeA.localeCompare(timeB);
+      }),
+    3: eventsData.events
+      .flatMap((society) =>
+        society.events.map((event) => ({
+          ...event,
+          society: society.society,
+          igLink: society.igLink,
+          date: event.date || "",
+          time: event.time || "",
+        }))
+      )
+      .filter((event) => event.date.includes("30 March"))
+      .sort((a, b) => {
+        const timeA = a.time?.split("-")[0] || "";
+        const timeB = b.time?.split("-")[0] || "";
+        return timeA.localeCompare(timeB);
+      }),
   };
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % events.length);
+      setCurrentIndex((prev) => (prev + 1) % carouselEvents.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, [events.length]);
+  }, [carouselEvents.length]);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % events.length);
+      setActiveIndex((prev) => (prev + 1) % carouselEvents.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [events.length]);
+  }, [carouselEvents.length]);
 
   const getVisibleCards = (index) => {
-    const total = events.length;
+    const total = carouselEvents.length;
     const prevIndex = (index - 1 + total) % total;
     const nextIndex = (index + 1) % total;
-    return [events[prevIndex], events[index], events[nextIndex]];
+    return [
+      carouselEvents[prevIndex],
+      carouselEvents[index],
+      carouselEvents[nextIndex],
+    ];
   };
 
   return (
@@ -483,88 +234,104 @@ export default function Home() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Morning Events Column */}
                     <div className="space-y-4">
-                      {scheduleData[day].slice(0, 5).map((event, index) => (
-                        <motion.div
-                          key={`morning-${index}`}
-                          className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.1 }}
-                        >
-                          <div className="flex flex-col gap-2">
-                            <div className="flex items-center gap-2">
-                              <Clock className="w-4 h-4 text-purple-400" />
-                              <span className="text-purple-400">
-                                {event.time}
-                              </span>
+                      {scheduleData[day]
+                        .slice(0, Math.ceil(scheduleData[day].length / 2))
+                        .map((event, index) => (
+                          <motion.div
+                            key={`morning-${index}`}
+                            className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.1 }}
+                          >
+                            <div className="flex flex-col gap-2">
+                              {event.time && (
+                                <div className="flex items-center gap-2">
+                                  <Clock className="w-4 h-4 text-purple-400" />
+                                  <span className="text-purple-400">
+                                    {event.time}
+                                  </span>
+                                </div>
+                              )}
+                              <h3 className="text-xl font-bold">
+                                {event.name}
+                              </h3>
+                              <div className="flex items-center gap-2">
+                                <MapPin className="w-4 h-4 text-gray-400" />
+                                <span className="text-gray-300">
+                                  {event.venue}
+                                </span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <p className="text-gray-400">
+                                  By {event.society}
+                                </p>
+                                {event.igLink && (
+                                  <a
+                                    href={event.igLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
+                                  >
+                                    <span>View Details</span>
+                                    <ExternalLink className="w-3 h-3" />
+                                  </a>
+                                )}
+                              </div>
                             </div>
-                            <h3 className="text-xl font-bold">{event.name}</h3>
-                            <div className="flex items-center gap-2">
-                              <MapPin className="w-4 h-4 text-gray-400" />
-                              <span className="text-gray-300">
-                                {event.venue}
-                              </span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                              <p className="text-gray-400">
-                                By {event.society}
-                              </p>
-                              <a
-                                href={event.igLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
-                              >
-                                <span>View Details</span>
-                                <ExternalLink className="w-3 h-3" />
-                              </a>
-                            </div>
-                          </div>
-                        </motion.div>
-                      ))}
+                          </motion.div>
+                        ))}
                     </div>
 
                     {/* Afternoon/Evening Events Column */}
                     <div className="space-y-4">
-                      {scheduleData[day].slice(5, 10).map((event, index) => (
-                        <motion.div
-                          key={`afternoon-${index}`}
-                          className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: (index + 5) * 0.1 }}
-                        >
-                          <div className="flex flex-col gap-2">
-                            <div className="flex items-center gap-2">
-                              <Clock className="w-4 h-4 text-purple-400" />
-                              <span className="text-purple-400">
-                                {event.time}
-                              </span>
+                      {scheduleData[day]
+                        .slice(Math.ceil(scheduleData[day].length / 2))
+                        .map((event, index) => (
+                          <motion.div
+                            key={`afternoon-${index}`}
+                            className="bg-gray-800/50 p-4 rounded-lg backdrop-blur-sm"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: (index + 5) * 0.1 }}
+                          >
+                            <div className="flex flex-col gap-2">
+                              {event.time && (
+                                <div className="flex items-center gap-2">
+                                  <Clock className="w-4 h-4 text-purple-400" />
+                                  <span className="text-purple-400">
+                                    {event.time}
+                                  </span>
+                                </div>
+                              )}
+                              <h3 className="text-xl font-bold">
+                                {event.name}
+                              </h3>
+                              <div className="flex items-center gap-2">
+                                <MapPin className="w-4 h-4 text-gray-400" />
+                                <span className="text-gray-300">
+                                  {event.venue}
+                                </span>
+                              </div>
+                              <div className="flex justify-between items-center">
+                                <p className="text-gray-400">
+                                  By {event.society}
+                                </p>
+                                {event.igLink && (
+                                  <a
+                                    href={event.igLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
+                                  >
+                                    <span>View Details</span>
+                                    <ExternalLink className="w-3 h-3" />
+                                  </a>
+                                )}
+                              </div>
                             </div>
-                            <h3 className="text-xl font-bold">{event.name}</h3>
-                            <div className="flex items-center gap-2">
-                              <MapPin className="w-4 h-4 text-gray-400" />
-                              <span className="text-gray-300">
-                                {event.venue}
-                              </span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                              <p className="text-gray-400">
-                                By {event.society}
-                              </p>
-                              <a
-                                href={event.igLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-3 py-1 bg-purple-600 hover:bg-purple-700 rounded-lg transition-colors text-sm"
-                              >
-                                <span>View Details</span>
-                                <ExternalLink className="w-3 h-3" />
-                              </a>
-                            </div>
-                          </div>
-                        </motion.div>
-                      ))}
+                          </motion.div>
+                        ))}
                     </div>
                   </div>
                 </Tab.Panel>
@@ -603,162 +370,18 @@ export default function Home() {
 
       {/* Event Carousel Section */}
       <motion.section className="min-h-screen w-full py-20 relative z-40">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Featured Events
-        </motion.h2>
-
-        <div className="relative w-full overflow-hidden">
-          <div className="flex justify-center items-center">
-            <div className="relative w-[90vw] max-w-[1200px] h-[600px] mx-auto">
-              {getVisibleCards(activeIndex).map((event, index) => (
-                <motion.div
-                  key={`${event.id}-${index}`}
-                  className="absolute top-1/2 left-1/2"
-                  initial={false}
-                  animate={{
-                    x: `${(index - 1) * 120 - 50}%`,
-                    y: "-50%",
-                    scale: index === 1 ? 1 : 0.85,
-                    opacity: index === 1 ? 1 : 0.5,
-                    zIndex: index === 1 ? 10 : index === 0 ? 5 : 0,
-                  }}
-                  transition={{
-                    duration: 0.7,
-                    ease: [0.32, 0.72, 0, 1],
-                    x: {
-                      type: "spring",
-                      stiffness: 300,
-                      damping: 30,
-                    },
-                  }}
-                  style={{
-                    width: "384px",
-                    transformPerspective: "1000px",
-                  }}
-                >
-                  <motion.div
-                    className="bg-gray-800/60 rounded-xl overflow-hidden backdrop-blur-sm shadow-xl"
-                    animate={{
-                      y: index === 1 ? 0 : index === 0 ? 40 : -40,
-                      rotateX: index === 1 ? 0 : index === 0 ? 10 : -10,
-                      filter: index === 1 ? "blur(0px)" : "blur(4px)",
-                      scale: index === 1 ? 1 : 0.95,
-                    }}
-                    transition={{
-                      duration: 0.5,
-                      ease: "easeInOut",
-                    }}
-                  >
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                      <p className="text-purple-400 mb-2">{event.society}</p>
-                      <div className="flex items-center gap-2 mb-2">
-                        <Clock className="w-4 h-4" />
-                        <span>{event.time}</span>
-                      </div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <MapPin className="w-4 h-4" />
-                        <span>{event.venue}</span>
-                      </div>
-                      <button className="w-full bg-purple-600 hover:bg-purple-700 py-2 rounded-lg transition-colors">
-                        View Details
-                      </button>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          <div className="absolute top-1/2 left-8 -translate-y-1/2">
-            <button
-              className="p-3 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors"
-              onClick={() => {
-                setActiveIndex((prev) =>
-                  prev === 0 ? events.length - 1 : prev - 1
-                );
-              }}
-            >
-              ←
-            </button>
-          </div>
-
-          <div className="absolute top-1/2 right-8 -translate-y-1/2">
-            <button
-              className="p-3 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors"
-              onClick={() => {
-                setActiveIndex((prev) => (prev + 1) % events.length);
-              }}
-            >
-              →
-            </button>
-          </div>
-        </div>
-
-        <div className="flex justify-center mt-8 gap-2">
-          {events.map((_, index) => (
-            <button
-              key={index}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                index === activeIndex ? "bg-purple-600" : "bg-gray-600"
-              }`}
-              onClick={() => setActiveIndex(index)}
-            />
-          ))}
-        </div>
+        <EventCarousel
+          events={carouselEvents}
+          selectedDay={selectedDay}
+          onDayChange={setSelectedDay}
+        />
       </motion.section>
 
       {/* Sponsors Section */}
-      <motion.section className="container mx-auto px-4 py-20 z-40">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-          Our Sponsors
-        </h2>
-        <div className="bg-black/30 p-8 rounded-xl">
-          <Carousel
-            items={[
-              { image: "/temp.jpg", name: "Sponsor 1" },
-              { image: "/temp.jpg", name: "Sponsor 2" },
-              { image: "/temp.jpg", name: "Sponsor 3" },
-              // Add more sponsors as needed
-            ]}
-          />
-        </div>
-      </motion.section>
+      <Sponsors />
 
       {/* Footer with darker background */}
-      <footer className="w-full bg-black/90 mt-20 py-12 px-4 z-40 border-t border-gray-800">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="text-xl font-bold mb-2">Hansraj College</h3>
-              <a
-                href="https://goo.gl/maps/YourCollegeLocation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-purple-300 hover:text-purple-400"
-              >
-                <MapPin className="w-4 h-4" />
-                Mahatma Hans Raj Marg, Malka Ganj, Delhi
-              </a>
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl font-bold mb-2">Contact Us</h3>
-              <p>Email: confluence@hansrajcollege.ac.in</p>
-              <p>Phone: +91 XXXXXXXXXX</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

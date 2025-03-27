@@ -1,4 +1,4 @@
-import EventCard from "@/app/components/EventCard";
+import EventCard from "../components/EventCarousel/EventCard";
 
 const EventsPage = () => {
   const events = [

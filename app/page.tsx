@@ -350,6 +350,7 @@ export default function Home() {
         </div>
       </motion.div>
 
+
       {/* Event Carousel Section */}
       <motion.section
         id="events"

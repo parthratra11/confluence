@@ -152,7 +152,7 @@ const EventCarousel = ({
               style={{
                 filter: Math.abs(offset) <= 1 ? "none" : "blur(4px)",
                 width: "280px", // Smaller width for mobile
-                "@media (min-width: 640px)": {
+                "@media (minWidth: 640px)": {
                   width: "320px", // Original width for larger screens
                 },
               }}

@@ -280,6 +280,34 @@
           "image": "/events/litSangam.jpg"
         }
       ]
+    },
+    {
+      "society": "Kavyaakriti",
+      "igLink": "https://instagram.com/kavyaakriti.hansraj",
+      "image": "/temp.jpg",
+      "events": [
+        {
+          "name": "Nritya Sparsh",
+          "venue": "Library Auditorium",
+          "date": "29 March",
+          "time": "9am",
+          "image": "/events/kavyakriti.jpg"
+        },
+        {
+          "name": "Nritya Manthan",
+          "venue": "Amphitheatre",
+          "date": "29 March",
+          "time": "2pm",
+          "image": "/events/nrityaManthan.jpg"
+        },
+        {
+          "name": "Nritya Sangram",
+          "venue": "Library Auditorium",
+          "date": "30 March",
+          "time": "9am",
+          "image": "/events/nrityaSangram.jpg"
+        }
+      ]
     }
   ]
 }

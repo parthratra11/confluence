@@ -130,16 +130,6 @@ const Footer: React.FC = () => {
       <div className="h-[5vh] z-50 w-full border-t border-gray-700 bg-gray-900 text-gray-300 flex justify-center items-center px-4 text-center">
         <p className="text-sm flex sm:py-0 flex-col sm:flex-row">
           <p className="mx-1">Copyright © 2025 Confluence | </p>
-          <p>
-            Designed and Developed by{" "}
-            <a
-              href="https://www.linkedin.com/in/parthratra11/"
-              target="_blank"
-              className="italic hover:text-cyan-400"
-            >
-              Parth Ratra
-            </a>
-          </p>
         </p>
       </div>
     </>
